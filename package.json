@@ -1,0 +1,19 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "my cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iorgoss95/PersonalWebSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iorgoss95/PersonalWebSite/issues"
+  },
+  "homepage": "https://github.com/iorgoss95/PersonalWebSite#readme"
+}
