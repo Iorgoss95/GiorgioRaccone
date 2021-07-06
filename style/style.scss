@@ -1,74 +1,93 @@
 
-$color-1: #ff7000;
-$color-2: #ffac4a;
-$color-3: #ffe9c9;
-$color-4: #f9c87c;
-$color-5: #f97432;
+$color-1: #5C038C;
+$color-2: #73378A;
+$color-3: #DA3F59;
+$color-4: #E5679A;
+$color-white: #FFFFFF;
 
 *{
     box-sizing: border-box;
-    font-size: 10px;
+    font-size: 5px;
     margin: 0;
     padding: 0;
 }
-body{
-    margin: 0;
-    padding: 0;
-    background-color: $color-1;
-    background-image: linear-gradient(26deg, $color-1 50%, $color-2 70%);
-    display: flex;
-    justify-content: center;
-    position: relative;
+body{    
+    
+    font-family: 'Fredoka One', cursive;
+    color: $color-white;
 }
 
-.page{
-    height: 100rem;
+.container_page{
+    background-image: linear-gradient( $color-1 15%, $color-4 60%, $color-white 100%);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     
 }
     
-.sectionTitle{
-    
+.big-divider{
+    content: "";
+    height: 20rem;
+}
+.small-divider{
+    content: "";
+    height: 10rem;
+}
+
+.main-title{
     display: flex;
     flex-direction: column;
     
-    padding: 1rem;
+    padding: 3rem;
     padding-top: 10rem;
     letter-spacing: 0.6rem;
-    color: $color-3;
-
+    color: $color-white;
+    
     h1, h2{
         font-family: 'Fredoka One', cursive;
         font-size: 12rem;
         line-height: 11rem;
-        padding: 3rem;
     }
     h2 {
         font-size: 9rem;
     }
 }
 
-.icon-top{
-    position: absolute;
-    right: 5rem;
-    top: 5rem
-}
-.gg-shape-circle {
-    color: $color-3;
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 1rem;
-    height: 1rem;
-    border: 2rem solid;
-    border-radius: 1.6rem;
+.section-title{
+    span{
+        font-size: 4rem;
+        padding: 1rem;
+    }
+    
 }
 
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+.section-card{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+    p{
+        font-size: 5rem;
+    }
+}
+
+.button{
+    background-color: $color-1;
+    border-radius: 3.5rem;
+    padding: 2.2rem;
+    margin: 1rem;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.footer{
+    background-color: $color-3;
+    height: 50rem;
+    padding-top: 5rem;
+}
+
+.normal-size{
+    font-size: 3rem;
+}
