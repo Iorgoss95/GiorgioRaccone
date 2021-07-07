@@ -1,0 +1,54 @@
+
+$color-white: #FFFFFF;
+
+.photo{
+
+    align-self: center;
+    &__shape {
+        width: 40rem;
+        height: 40rem;
+        
+        
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        border: white 5px solid;
+        
+    }
+    
+    &__img {
+        height: 100%;
+        transform: translateX(4.6rem) translateY(1rem) scale(1.6);
+        backface-visibility: hidden;
+        transition: all .4s;
+        
+    }
+
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        font-size: 6rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .4s;
+        backface-visibility: hidden;
+    }
+
+    
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(4.6rem) scale(1.45);
+        filter: blur(2px) brightness(90%);
+    }
+
+    
+}

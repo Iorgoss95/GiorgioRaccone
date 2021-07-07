@@ -1,0 +1,131 @@
+.photo {
+  align-self: center; }
+  .photo__shape {
+    width: 40rem;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: white 5px solid; }
+  .photo__img {
+    height: 100%;
+    transform: translateX(4.6rem) translateY(1rem) scale(1.6);
+    backface-visibility: hidden;
+    transition: all .4s; }
+  .photo__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #FFFFFF;
+    font-size: 6rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .4s;
+    backface-visibility: hidden; }
+  .photo:hover .photo__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .photo:hover .photo__img {
+    transform: translateX(4.6rem) scale(1.45);
+    filter: blur(2px) brightness(90%); }
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Fredoka One', cursive;
+  font-size: 5rem;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column; }
+
+.top-container, .middle-container, .bottom-container {
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+.top-container {
+  background-color: #A16AE8;
+  display: flex;
+  flex-direction: column; }
+
+.middle-container {
+  background-color: #FD49A0;
+  height: 150rem;
+  color: #B4FEE7; }
+
+.bottom-container {
+  background-color: #B4FEE7;
+  color: #FD49A0; }
+  .bottom-container a {
+    color: inherit;
+    text-decoration: none; }
+
+.normal-size {
+  font-size: 6rem; }
+
+.copy2021 {
+  font-size: 2rem;
+  color: #A16AE8; }
+
+.big-divider {
+  content: "";
+  height: 20rem; }
+
+.small-divider {
+  content: "";
+  height: 10rem; }
+
+.main-title {
+  display: flex;
+  flex-direction: column; }
+  .main-title h1, .main-title h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20rem; }
+  .main-title h2 {
+    font-size: 13rem; }
+
+.section-title span {
+  font-size: 4rem;
+  padding: 1rem; }
+
+.button {
+  background-color: #FD49A0;
+  border-radius: 4.5rem;
+  padding: 3.5rem 5.5rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all .2s; }
+  .button:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+  .button:active, .button:focus {
+    outline: none;
+    transform: translateY(0.6rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0); }
+
+.align-center {
+  text-align: center; }
+
+.foo-container p {
+  font-size: 6rem; }
+
+.foo-card {
+  padding: 1rem 0; }
+
+@media only screen and (min-width: 950px) {
+  * {
+    font-size: 10px; } }
+
+@media only screen and (min-width: 750px) {
+  * {
+    font-size: 6px; } }
+
+@media only screen and (max-width: 300px) {
+  * {
+    font-size: 4px; } }
