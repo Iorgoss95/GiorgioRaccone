@@ -1,30 +1,67 @@
 
-$color-1: #5C038C;
-$color-2: #73378A;
-$color-3: #DA3F59;
-$color-4: #E5679A;
+$color-purple: #603F8B;
+$color-fucsia: #FD49A0;
 $color-white: #FFFFFF;
+$color-white-dark: #fff;
+$color-azur: #B4FEE7;
+$color-violet: #A16AE8;
+
+@import "img/photo.scss";
+
 
 *{
     box-sizing: border-box;
-    font-size: 5px;
+    font-size: 10px;
     margin: 0;
     padding: 0;
 }
+
 body{    
-    
     font-family: 'Fredoka One', cursive;
+    font-size: 5rem;
     color: $color-white;
+    display: flex;
+    flex-direction: column;
+    
+    //background-image: linear-gradient( $color-1 15%, $color-4 60%, $color-white 95%);
 }
 
-.container_page{
-    background-image: linear-gradient( $color-1 15%, $color-4 60%, $color-white 100%);
+.top-container, .middle-container, .bottom-container{
+    padding: 10rem;
+    height: 150rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.top-container{
+    background-color: $color-violet;
+    height: 150rem;
+    display: flex;
     flex-direction: column;
     
 }
     
+.middle-container{
+    background-color: $color-fucsia;
+    height: 250rem;
+    color: $color-azur;
+}
+
+.bottom-container{
+    background-color: $color-azur;
+    height: 100rem;
+    padding-bottom: 70rem;
+    color: $color-fucsia;
+}
+
+.normal-size{
+    font-size: 7rem;
+}
+
+
+
+//--------------------------------------------------------
 .big-divider{
     content: "";
     height: 20rem;
@@ -36,20 +73,13 @@ body{
 
 .main-title{
     display: flex;
-    flex-direction: column;
-    
-    padding: 3rem;
-    padding-top: 10rem;
-    letter-spacing: 0.6rem;
-    color: $color-white;
-    
+    flex-direction: column;    
     h1, h2{
         font-family: 'Fredoka One', cursive;
-        font-size: 12rem;
-        line-height: 11rem;
+        font-size: 20rem;
     }
     h2 {
-        font-size: 9rem;
+        font-size: 13rem;
     }
 }
 
@@ -62,32 +92,111 @@ body{
 }
 
 .section-card{
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
     
-    p{
-        font-size: 5rem;
-    }
 }
 
 .button{
-    background-color: $color-1;
-    border-radius: 3.5rem;
-    padding: 2.2rem;
+    background-color: $color-fucsia;
+    border-radius: 4.5rem;
+    padding: 3.5rem 5.5rem;
     margin: 1rem;
+    cursor: pointer;
+    transition: all .2s;
+    
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 3rem rgba(black,.2);
+    }
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(0.6rem);
+        box-shadow: 0 1rem 2rem rgba(black,0);
+    }
 }
 
 .align-center{
     text-align: center;
 }
 
-.footer{
-    background-color: $color-3;
-    height: 50rem;
-    padding-top: 5rem;
+.foo-container{
+    p{
+        font-size: 6rem;
+    }
 }
 
-.normal-size{
-    font-size: 3rem;
+
+
+//media queries for font size
+//BIG SCREEN
+@media only screen and (min-width: 950px) {
+    * {
+        font-size: 10px;
+    }
+}
+//MOBILE SCREEN
+@media only screen and (min-width: 750px) {
+    * {
+        font-size: 6px;
+    }
+}
+//VERY SMALL SCREEN
+@media only screen and (max-width: 300px) {
+    * {
+        font-size: 4px;
+    }
+}
+
+
+.photo{
+
+    &__shape {
+        width: 3rem;
+        height: 3rem;
+        float: left;
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+
+    }
+
+    &__img {
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
+    }
 }
