@@ -94,6 +94,9 @@ body {
   font-size: 4rem;
   padding: 1rem; }
 
+.section-description {
+  line-height: 10rem; }
+
 .button {
   background-color: #FD49A0;
   border-radius: 4.5rem;
