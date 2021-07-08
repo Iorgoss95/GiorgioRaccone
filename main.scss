@@ -143,6 +143,10 @@ body{
 @media only screen and (max-width: 400px) {
     * {
         font-size: 1.1vw;
+        
+        .normal-size{
+            font-size: 3.5rem;
+        }
     }
 }
 
