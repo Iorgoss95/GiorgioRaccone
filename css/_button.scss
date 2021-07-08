@@ -13,8 +13,8 @@
     transition: all .2s;
     
     &:hover {
-        transform: translateY(-0.3rem);
-        box-shadow: 0 1rem 2rem rgba(black,.2);
+        transform: translateY(-0.6rem);
+        box-shadow: 0 1.4rem 2rem rgba(black,.3);
     }
     &:active,
     &:focus {

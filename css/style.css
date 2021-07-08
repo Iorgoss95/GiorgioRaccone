@@ -95,9 +95,9 @@ body {
   flex-direction: column;
   font-family: 'Fredoka One', cursive; }
   .main-title h1 {
-    font-size: 12rem; }
+    font-size: 12em; }
   .main-title h2 {
-    font-size: 6rem; }
+    font-size: 9.5em; }
 
 .section-title span {
   font-size: 2rem;
@@ -111,23 +111,22 @@ body {
 
 .foo-card {
   padding: .5rem 0; }
+  .foo-card :link:hover {
+    transform: translateY(-0.3rem);
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
 
-/*
-//media queries for font size
-//BIG SCREEN
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+  * {
+    font-size: 1vw; }
+    * .normal-size {
+      font-size: 2.5rem; } }
 
-@media only screen and (min-width: 950px) {
-    * {
-        font-size: 10px;
-    }
-}
-//MOBILE SCREEN
-@media only screen and (min-width: 750px) {
-    * {
-        font-size: 6px;
-    }
-}
-*/
+@media only screen and (min-width: 401px) and (max-width: 750px) {
+  * {
+    font-size: .9vw; }
+    * .normal-size {
+      font-size: 3rem; } }
+
 @media only screen and (max-width: 400px) {
   * {
     font-size: 1.1vw; }
@@ -177,8 +176,8 @@ body {
   cursor: pointer;
   transition: all .2s; }
   .btn-toggle:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    transform: translateY(-0.6rem);
+    box-shadow: 0 1.4rem 2rem rgba(0, 0, 0, 0.3); }
   .btn-toggle:active, .btn-toggle:focus {
     outline: none;
     transform: translateY(0.3rem);
