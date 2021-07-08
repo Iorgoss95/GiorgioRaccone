@@ -13,7 +13,7 @@
     <title>Giorgio Raccone</title>
 </head>
 
-<body>
+<body class="theme-1 ">
     <div class="top-container">
         <div class="big-divider"></div>
 
@@ -27,6 +27,11 @@
             </h2>
         </div>
         <div class="small-divider"></div>
+
+        <div class="btn-toggle">
+            <p class="button normal-size align-center">Toggle colors</p>
+        </div>
+        <div class="small-divider"></div>
         <div class="photo">
             <figure class="photo__shape">
                 <img src="img/photo1.jpg" alt="Giorgio" class="photo__img">
@@ -38,19 +43,15 @@
     <div class="middle-container">
         <div class="big-divider"></div>
 
-        <div class="section-description">
+        <div class="section-description line-height">
             <p class="normal-size">
-                I know, I'm at the beginning of my journey, but I like to develop websites that are beautiful and most
-                importantly functional for users.
-
+                I'm at the beginning of my journey, but I like to develop websites that are beautiful and most
+                importantly functional for users. <br>
                 I especially like the frontend, because it allows me to work with shapes, colors and ux layouts.
-                but i don't despise everything that has to do with technology.
-
+                but i don't despise everything that has to do with technology. <br>
                 I listen a lot of music and play tennis in my spare time.
-
-                I believe in Bitcon and blockchain.
-
-                my dreams ... too many!
+                <br>
+                Bitcoin enthusiast.
 
             </p>
         </div>
@@ -63,13 +64,13 @@
         <div class="big-divider"></div>
 
         <div class="foo-container align-center">
-            <p class="normal-size">
+            <p class="big-size">
                 Contact me!
             </p>
             <div class="small-divider"></div>
 
             <section class="foo-card">
-                <p>Email :</p>
+                <p class="normal-size">Email :</p>
                 <p>
                     <a class="normal-size" href="mailto:giorgioraccone@gmail.com">giorgioraccone@gmail.com</a>
                 </p>
@@ -86,6 +87,12 @@
                     <a class="normal-size" href="https://www.instagram.com/iorgoss/?r=nametag">Instagram</a>
                 </p>
             </section>
+            <div class="small-divider"></div>
+            <section class="foo-card">
+                <p>
+                    <a class="normal-size" href="https://github.com/iorgoss95">GitHub</a>
+                </p>
+            </section>
             <div class="big-divider"></div>
             <span class="copy2021">
                 © 2021 Giorgio Raccopne. All rights reserved. FrontEnd Developer.
@@ -93,5 +100,28 @@
         </div>
     </div>
 </body>
+
+<script>
+    const btn = document.querySelector(".btn-toggle");
+    let i = 2;
+
+    console.log("pre button  " + i);
+    btn.addEventListener("click", function () {
+        document.body.classList.remove("theme-" + (i - 1))
+        console.log("removed " + (i - 1), "add " + i);
+        document.body.classList.add("theme-" + i);
+        if (i > 5) {
+            document.body.classList.remove("theme-" + (i))
+            console.log("remove" + i);
+            i = 2;
+            document.body.classList.add("theme-" + (i - 1));
+            console.log("add" + (i - 1));
+        }
+        else {
+            i++;
+        }
+    });
+
+</script>
 
 </html>
