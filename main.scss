@@ -1,29 +1,33 @@
 
-$color-white: #FFFFFF;
-$color-black:#0E050F;
-
 @import "css/colors";
 
 
 *{
     box-sizing: border-box;
-    font-size: 10px;
+    font-size: .6vw;
     margin: 0;
     padding: 0;
 }
 
 body{    
     font-family: 'Fredoka One', cursive;
-    font-size: 5rem;
+    font-size: 2.5rem;
     color: $color-white;
     display: flex;
     flex-direction: column;
 
+    &.disable-text-selection{
+        -ms-user-select:none;
+        -moz-user-select:none;
+        -webkit-user-select:none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+         user-select:none;
+     }
 }
 
-
 .top-container, .middle-container, .bottom-container{
-    padding: 10rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -41,7 +45,13 @@ body{
 .middle-container{
     background-color: var(--color-2);
     color: var(--color-3);
-    height: 150rem;
+    
+    display: grid;
+
+    .section-description{
+        
+    }
+   
 }
 
 .bottom-container{
@@ -54,49 +64,51 @@ body{
     }
 }
 .copy2021{
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--color-2);
 }
 
-//  END COLORS----------------------------------------
+//   UTILITY CLASSES
 .normal-size{
-    font-size: 6rem;
+    font-size: 2.5rem;
 }
 .big-size{
-    font-size: 9rem;
+    font-size: 4rem;
 }
 
 .big-divider{
     content: "";
-    height: 20rem;
+    height: 10rem;
 }
 .small-divider{
     content: "";
-    height: 10rem;
+    height: 5rem;
 }
 
+
+//   OTHER CLASSES----------------------
 .main-title{
     display: flex;
     flex-direction: column;    
     font-family: 'Fredoka One', cursive;
     h1{
-        font-size: 20rem;
+        font-size: 12rem;
     }
     h2 {
-        font-size: 13rem;
+        font-size: 6rem;
     }
 }
 
 .section-title{
     span{
-        font-size: 4rem;
-        padding: 1rem;
+        font-size: 2rem;
+        padding: .5rem;
     }
     
 }
 
 .line-height{
-    line-height: 10rem;
+    line-height: 5rem;
 }
 
 .align-center{
@@ -107,12 +119,14 @@ body{
 }
 
 .foo-card{
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
 
+/*
 //media queries for font size
 //BIG SCREEN
+
 @media only screen and (min-width: 950px) {
     * {
         font-size: 10px;
@@ -124,13 +138,13 @@ body{
         font-size: 6px;
     }
 }
+*/
 //VERY SMALL SCREEN
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
     * {
-        font-size: 4px;
+        font-size: 1.1vw;
     }
 }
-
 
 @import "css/photo";
 @import "css/button";

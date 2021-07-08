@@ -3,19 +3,19 @@
     align-self: center;
 
     &__shape {
-        width: 45rem;
-        height: 45rem;      
+        width: 26rem;
+        height: 26rem;      
         
         position: relative;
         overflow: hidden;
         border-radius: 50%;
-        border: var(--color-2) 1.5rem solid;
+        border: var(--color-2) .75rem solid;
         
     }
     
     &__img {
         height: 100%;
-        transform: translateX(4.6rem) translateY(0.7rem) scale(1.5);
+        transform: translateX(2.6rem) translateY(0.4rem) scale(1.5);
         backface-visibility: hidden;
         transition: all .4s;
         
@@ -27,8 +27,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, 20%);
-        color: var(--color-2);
-        font-size: 6rem;
+        color: $color-white;
+        font-size: 3rem;
         text-align: center;
         opacity: 0;
         transition: all .4s;
@@ -43,8 +43,8 @@
     }
 
     &:hover &__img {
-        transform: translateX(4.6rem) scale(1.45);
-        filter: blur(2px) brightness(90%);
+        transform: translateX(2.6rem) scale(1.45);
+        filter: blur(2px) brightness(80%);
     }
 
     

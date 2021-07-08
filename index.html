@@ -10,10 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
+    
     <title>Giorgio Raccone</title>
 </head>
 
-<body class="theme-1 ">
+<body class="theme-1 disable-text-selection">
+
+    <!----TOP CONTAINER------------------------->
     <div class="top-container">
         <div class="big-divider"></div>
 
@@ -28,10 +31,14 @@
         </div>
         <div class="small-divider"></div>
 
+        <!--BUTTON-->
         <div class="btn-toggle">
             <p class="button normal-size align-center">Toggle colors</p>
         </div>
+        <!--END BUTTON-->
+
         <div class="small-divider"></div>
+
         <div class="photo">
             <figure class="photo__shape">
                 <img src="img/photo1.jpg" alt="Giorgio" class="photo__img">
@@ -39,9 +46,8 @@
             </figure>
         </div>
     </div>
-    <!--middle                     -->
+    <!--MIDDLE CONTAINER--------------------------------->
     <div class="middle-container">
-        <div class="big-divider"></div>
 
         <div class="section-description line-height">
             <p class="normal-size">
@@ -56,12 +62,19 @@
             </p>
         </div>
 
+        <div class="section-description line-height">
+            <p class="normal-size"> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem explicabo repudiandae molestiae necessitatibus ab esse eum voluptatum harum quia dolorem saepe facilis fugiat corrupti illo, quis consectetur debitis tempore iure.
+            </p>
 
-        <div class="big-divider"></div>
+        </div>
+
+
+      
     </div>
-    <!--bottom                     -->
+    <!--BOTTOM CONTAINER------------------------------>
     <div class="bottom-container">
-        <div class="big-divider"></div>
+        <div class="small-divider"></div>
 
         <div class="foo-container align-center">
             <p class="big-size">
@@ -90,7 +103,7 @@
             <div class="small-divider"></div>
             <section class="foo-card">
                 <p>
-                    <a class="normal-size" href="https://github.com/iorgoss95">GitHub</a>
+                    <a class="normal-size" href="https://github.com/iorgoss95">GitHub/Iorgoss95</a>
                 </p>
             </section>
             <div class="big-divider"></div>
@@ -99,29 +112,8 @@
             </span>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
-
-<script>
-    const btn = document.querySelector(".btn-toggle");
-    let i = 2;
-
-    console.log("pre button  " + i);
-    btn.addEventListener("click", function () {
-        document.body.classList.remove("theme-" + (i - 1))
-        console.log("removed " + (i - 1), "add " + i);
-        document.body.classList.add("theme-" + i);
-        if (i > 5) {
-            document.body.classList.remove("theme-" + (i))
-            console.log("remove" + i);
-            i = 2;
-            document.body.classList.add("theme-" + (i - 1));
-            console.log("add" + (i - 1));
-        }
-        else {
-            i++;
-        }
-    });
-
-</script>
 
 </html>
