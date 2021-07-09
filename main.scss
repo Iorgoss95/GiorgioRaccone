@@ -7,6 +7,7 @@
     font-size: .6vw;
     margin: 0;
     padding: 0;
+    text-rendering: optimizeLegibility;
 }
 
 body{    
@@ -24,6 +25,7 @@ body{
         -khtml-user-select: none;
          user-select:none;
      }
+
 }
 
 .top-container, .middle-container, .bottom-container{
@@ -165,3 +167,4 @@ body{
 
 @import "css/photo";
 @import "css/button";
+@import "css/scrollbar";

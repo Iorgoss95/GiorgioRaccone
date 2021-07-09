@@ -1,0 +1,28 @@
+//SCROLLBARR------------------------------
+
+#scrollbar-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    right: 0;
+    width: 2rem;
+    left: auto;
+    bottom: 0;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.scrollbar {
+    position: absolute;
+    top: 0;
+    background-color: var(--color-2);
+    right: 0;
+    width: .7rem;
+    
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

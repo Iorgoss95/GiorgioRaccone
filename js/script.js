@@ -34,5 +34,14 @@ btn.addEventListener("click", function () {
 
 
 
+//--DYNAMIC SCROLLBAR-----------------------------------
+const y = window.innerHeight*4;
+document.querySelector(".scrollbar").setAttribute("style", "height:"+ y +"px; transform: translateY("+ y +"vh)");
+window.addEventListener('scroll',(event) => {
+    document.querySelector(".scrollbar").setAttribute("style", "height:"+ y +"px; transform: translateY("+ -(window.innerHeight-pageYOffset) +"rem)");
+});
+
+    
+
 
 

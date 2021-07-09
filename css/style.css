@@ -32,7 +32,8 @@
   box-sizing: border-box;
   font-size: .6vw;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  text-rendering: optimizeLegibility; }
 
 body {
   font-family: 'Fredoka One', cursive;
@@ -182,3 +183,25 @@ body {
     outline: none;
     transform: translateY(0.3rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0); }
+
+#scrollbar-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  right: 0;
+  width: 2rem;
+  left: auto;
+  bottom: 0;
+  background-color: transparent;
+  opacity: 1; }
+
+.scrollbar {
+  position: absolute;
+  top: 0;
+  background-color: var(--color-2);
+  right: 0;
+  width: .7rem; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; }
