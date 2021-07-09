@@ -1,0 +1,43 @@
+//media queries for font size
+//BIG SCREEN
+
+@media only screen and (min-width: 1000px) {
+    *  {
+        font-size: .8vw;
+        
+        .normal-size{
+            font-size: 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+    *  {
+        font-size: 1.2vw;
+        
+        .normal-size{
+            font-size: 3rem;
+        }
+    }
+}
+
+//MOBILE SCREEN
+@media only screen and (min-width: 450px)  and (max-width: 750px) {
+    * {
+        font-size: .9vw;
+        
+        .normal-size{
+            font-size: 3rem;
+        }
+    }
+}
+//VERY SMALL SCREEN
+@media only screen and (max-width: 450px) {
+    * {
+        font-size: 2vw;
+        
+        .normal-size{
+            font-size: 3.5rem;
+        }
+    }
+}

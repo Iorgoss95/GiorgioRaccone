@@ -130,41 +130,7 @@ body{
 }
 
 
-
-//media queries for font size
-//BIG SCREEN
-
-@media only screen and (min-width: 750px) and (max-width: 950px) {
-    *  {
-        font-size: 1vw;
-        
-        .normal-size{
-            font-size: 2.5rem;
-        }
-    }
-}
-
-//MOBILE SCREEN
-@media only screen and (min-width: 401px)  and (max-width: 750px) {
-    * {
-        font-size: .9vw;
-        
-        .normal-size{
-            font-size: 3rem;
-        }
-    }
-}
-//VERY SMALL SCREEN
-@media only screen and (max-width: 400px) {
-    * {
-        font-size: 1.1vw;
-        
-        .normal-size{
-            font-size: 3.5rem;
-        }
-    }
-}
-
 @import "css/photo";
 @import "css/button";
 @import "css/scrollbar";
+@import "css/mediaQueries";

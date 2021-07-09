@@ -116,24 +116,6 @@ body {
     transform: translateY(-0.3rem);
     text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
 
-@media only screen and (min-width: 750px) and (max-width: 950px) {
-  * {
-    font-size: 1vw; }
-    * .normal-size {
-      font-size: 2.5rem; } }
-
-@media only screen and (min-width: 401px) and (max-width: 750px) {
-  * {
-    font-size: .9vw; }
-    * .normal-size {
-      font-size: 3rem; } }
-
-@media only screen and (max-width: 400px) {
-  * {
-    font-size: 1.1vw; }
-    * .normal-size {
-      font-size: 3.5rem; } }
-
 .photo {
   align-self: center; }
   .photo__shape {
@@ -199,9 +181,34 @@ body {
   position: absolute;
   top: 0;
   background-color: var(--color-2);
+  background-color: yellow;
   right: 0;
   width: .7rem; }
 
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent; }
+
+@media only screen and (min-width: 1000px) {
+  * {
+    font-size: .8vw; }
+    * .normal-size {
+      font-size: 3rem; } }
+
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+  * {
+    font-size: 1.2vw; }
+    * .normal-size {
+      font-size: 3rem; } }
+
+@media only screen and (min-width: 450px) and (max-width: 750px) {
+  * {
+    font-size: .9vw; }
+    * .normal-size {
+      font-size: 3rem; } }
+
+@media only screen and (max-width: 450px) {
+  * {
+    font-size: 2vw; }
+    * .normal-size {
+      font-size: 3.5rem; } }
