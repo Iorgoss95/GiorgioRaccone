@@ -28,11 +28,11 @@
   --color-3: #FFD53D;
   --color-4: #d5e3f4; }
 
-.theme-5 {
+.theme-6 {
   --color-1: #087a95;
   --color-2: #35afa4;
-  --color-4: #d5e3f4;
-  --color-3: #dc6449; }
+  --color-3: #d5e3f4;
+  --color-4: #d5e3f4; }
 
 * {
   box-sizing: border-box;
@@ -211,7 +211,7 @@ body {
   * {
     font-size: .4vw; }
     * .normal-size {
-      font-size: 3rem; }
+      font-size: 1.5vw; }
   .main-title h1 {
     font-size: 11vw; }
   .main-title h2 {
@@ -219,31 +219,31 @@ body {
 
 @media only screen and (min-width: 1000px) and (max-width: 1250px) {
   * {
-    font-size: .9vw; }
+    font-size: .7vw; }
     * .normal-size {
-      font-size: 3rem; }
+      font-size: 2vw; }
   .main-title h1 {
     font-size: 11vw; }
   .main-title h2 {
     font-size: 5vw; } }
 
-@media only screen and (min-width: 750px) and (max-width: 950px) {
+@media only screen and (min-width: 750px) and (max-width: 999px) {
   * {
     font-size: .9vw; }
     * .normal-size {
-      font-size: 3rem; } }
+      font-size: 3vw; } }
 
 @media only screen and (min-width: 450px) and (max-width: 750px) {
   * {
-    font-size: .9vw; }
+    font-size: 1.3vw; }
     * .normal-size {
-      font-size: 3rem; } }
+      font-size: 3vw; } }
 
 @media only screen and (max-width: 450px) {
   * {
     font-size: 2vw; }
     * .normal-size {
-      font-size: 3.5vw; }
+      font-size: 4vw; }
     * .main-title h1 {
       font-size: 20vw; }
     * .main-title h2 {

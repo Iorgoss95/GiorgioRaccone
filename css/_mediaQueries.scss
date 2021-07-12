@@ -6,7 +6,7 @@
         font-size: .4vw;
         
         .normal-size{
-            font-size: 3rem;
+            font-size: 1.5vw;
         }
         
         
@@ -24,10 +24,10 @@
 
 @media only screen and (min-width: 1000px) and (max-width: 1250px)  {
     *  {
-        font-size: .9vw;
+        font-size: .7vw;
         
         .normal-size{
-            font-size: 3rem;
+            font-size: 2vw;
         }
         
         
@@ -43,12 +43,12 @@
     }
 }
 
-@media only screen and (min-width: 750px) and (max-width: 950px) {
+@media only screen and (min-width: 750px) and (max-width: 999px) {
     *  {
         font-size: .9vw;
         
         .normal-size{
-            font-size: 3rem;
+            font-size: 3vw;
         }
     }
 }
@@ -56,10 +56,10 @@
 //MOBILE SCREEN
 @media only screen and (min-width: 450px)  and (max-width: 750px) {
     * {
-        font-size: .9vw;
+        font-size: 1.3vw;
         
         .normal-size{
-            font-size: 3rem;
+            font-size: 3vw;
         }
     }
 }
@@ -69,7 +69,7 @@
         font-size: 2vw;
         
         .normal-size{
-            font-size: 3.5vw;
+            font-size: 4vw;
         }
 
         .main-title{
