@@ -5,7 +5,7 @@
     top: 0;
     z-index: 50;
     right: 0;
-    width: 2rem;
+    width: .5rem;
     left: auto;
     bottom: 0;
     background-color: transparent;
@@ -16,10 +16,10 @@
     position: absolute;
     top: 0;
     background-color: var(--color-2);
-    background-color: yellow;
     right: 0;
-    width: .7rem;
-    
+    width: .5rem;
+    height: 100vh;
+    transform: translateY(100vh);
 }
 
 

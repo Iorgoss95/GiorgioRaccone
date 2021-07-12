@@ -30,7 +30,7 @@
 
 * {
   box-sizing: border-box;
-  font-size: .6vw;
+  font-size: .5vw;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility; }
@@ -96,9 +96,9 @@ body {
   flex-direction: column;
   font-family: 'Fredoka One', cursive; }
   .main-title h1 {
-    font-size: 12em; }
+    font-size: 15vw; }
   .main-title h2 {
-    font-size: 9.5em; }
+    font-size: 10vw; }
 
 .section-title span {
   font-size: 2rem;
@@ -171,7 +171,7 @@ body {
   top: 0;
   z-index: 50;
   right: 0;
-  width: 2rem;
+  width: .5rem;
   left: auto;
   bottom: 0;
   background-color: transparent;
@@ -181,9 +181,10 @@ body {
   position: absolute;
   top: 0;
   background-color: var(--color-2);
-  background-color: yellow;
   right: 0;
-  width: .7rem; }
+  width: .5rem;
+  height: 100vh;
+  transform: translateY(100vh); }
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -191,13 +192,13 @@ body {
 
 @media only screen and (min-width: 1000px) {
   * {
-    font-size: .8vw; }
+    font-size: .6vw; }
     * .normal-size {
       font-size: 3rem; } }
 
 @media only screen and (min-width: 750px) and (max-width: 950px) {
   * {
-    font-size: 1.2vw; }
+    font-size: .7vw; }
     * .normal-size {
       font-size: 3rem; } }
 
@@ -211,4 +212,4 @@ body {
   * {
     font-size: 2vw; }
     * .normal-size {
-      font-size: 3.5rem; } }
+      font-size: 3.5vw; } }
