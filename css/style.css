@@ -1,32 +1,36 @@
 .theme-1 {
-  --color-1: #04B16F;
-  --color-2: #A3EBB1;
-  --color-3: #21B6A8; }
+  --color-2: #fa5b4c;
+  --color-1: #264c7d;
+  --color-3: #fcad44;
+  --color-4: #d5e3f4; }
 
 .theme-2 {
   --color-1: #341948;
   --color-2: #9388A2;
-  --color-3: #170B3B; }
+  --color-3: #170B3B;
+  --color-4: #d5e3f4
+; }
 
 .theme-3 {
   --color-1: #A16AE8;
   --color-2: #B4FEE7;
-  --color-3: #FD49A0; }
+  --color-3: #FD49A0;
+  --color-4: #d5e3f4
+; }
 
 .theme-4 {
-  --color-1: #f35e14;
-  --color-2: #9e0806;
-  --color-3: #ff9341; }
+  --color-1: #04B16F;
+  --color-2: #A3EBB1;
+  --color-3: #21B6A8;
+  --color-4: #d5e3f4
+; }
 
 .theme-5 {
   --color-1: #0067B3;
   --color-2: #40B0DF;
-  --color-3: #FFD53D; }
-
-.theme-6 {
-  --color-1: #F9FEFB;
-  --color-2: #B24A3B;
-  --color-3: #6de6cf; }
+  --color-3: #FFD53D;
+  --color-4: #d5e3f4
+; }
 
 * {
   box-sizing: border-box;
@@ -57,7 +61,7 @@ body {
 
 .top-container {
   background-color: var(--color-1);
-  color: var(--color-2);
+  color: var(--color-4);
   display: flex;
   flex-direction: column; }
 
@@ -112,9 +116,18 @@ body {
 
 .foo-card {
   padding: .5rem 0; }
-  .foo-card :link:hover {
-    transform: translateY(-0.3rem);
-    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
+  .foo-card .cool-link {
+    display: inline-block;
+    text-decoration: none; }
+  .foo-card .cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: .4rem;
+    background: var(--color-2);
+    transition: width .3s; }
+  .foo-card .cool-link:hover::after {
+    width: 100%; }
 
 .photo {
   align-self: center; }
@@ -180,7 +193,7 @@ body {
 .scrollbar {
   position: absolute;
   top: 0;
-  background-color: var(--color-2);
+  background-color: var(--color-4);
   right: 0;
   width: .5rem;
   height: 100vh;
@@ -192,9 +205,13 @@ body {
 
 @media only screen and (min-width: 1000px) {
   * {
-    font-size: .6vw; }
+    font-size: .5vw; }
     * .normal-size {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+  .main-title h1 {
+    font-size: 11vw; }
+  .main-title h2 {
+    font-size: 5vw; } }
 
 @media only screen and (min-width: 750px) and (max-width: 950px) {
   * {
