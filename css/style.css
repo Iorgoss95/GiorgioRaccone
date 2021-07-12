@@ -165,10 +165,15 @@ body {
     transform: translateX(3rem) scale(1.45);
     filter: blur(2px) brightness(80%); }
 
+.btn-container {
+  display: flex;
+  flex-direction: column; }
+
 .btn-toggle {
-  background-color: var(--color-2);
-  color: var(--color-1);
+  background-color: var(--color-3);
+  color: var(--color-2);
   align-self: center;
+  justify-self: center;
   width: 20rem;
   border-radius: 2.3rem;
   padding: 1.7rem 2.7rem;
@@ -244,6 +249,8 @@ body {
     font-size: 2vw; }
     * .normal-size {
       font-size: 4vw; }
+    * .line-height {
+      line-height: 3rem; }
     * .main-title h1 {
       font-size: 20vw; }
     * .main-title h2 {

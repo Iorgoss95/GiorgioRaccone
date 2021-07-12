@@ -1,9 +1,14 @@
 
 
+.btn-container{
+    display: flex;
+    flex-direction: column;
+}
 .btn-toggle{
-    background-color: var(--color-2);
-    color: var(--color-1);
+    background-color: var(--color-3);
+    color: var(--color-2);
     align-self: center;
+    justify-self: center;
     width: 20rem;
     border-radius: 2.3rem;
     padding: 1.7rem 2.7rem;
