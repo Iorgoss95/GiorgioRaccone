@@ -1,9 +1,30 @@
 //media queries for font size
 //BIG SCREEN
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1250px) {
     *  {
-        font-size: .5vw;
+        font-size: .4vw;
+        
+        .normal-size{
+            font-size: 3rem;
+        }
+        
+        
+    }
+    .main-title{
+
+        h1{
+            font-size: 11vw;
+        }
+        h2 {
+            font-size: 5vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1250px)  {
+    *  {
+        font-size: .9vw;
         
         .normal-size{
             font-size: 3rem;
@@ -24,7 +45,7 @@
 
 @media only screen and (min-width: 750px) and (max-width: 950px) {
     *  {
-        font-size: .7vw;
+        font-size: .9vw;
         
         .normal-size{
             font-size: 3rem;

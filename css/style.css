@@ -134,15 +134,15 @@ body {
 .photo {
   align-self: center; }
   .photo__shape {
-    width: 26rem;
-    height: 26rem;
+    width: 27rem;
+    height: 27rem;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
     border: var(--color-2) 0.75rem solid; }
   .photo__img {
     height: 100%;
-    transform: translateX(2.6rem) translateY(0.4rem) scale(1.5);
+    transform: translateX(3rem) translateY(0.4rem) scale(1.5);
     backface-visibility: hidden;
     transition: all .4s; }
   .photo__caption {
@@ -160,7 +160,7 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .photo:hover .photo__img {
-    transform: translateX(2.6rem) scale(1.45);
+    transform: translateX(3rem) scale(1.45);
     filter: blur(2px) brightness(80%); }
 
 .btn-toggle {
@@ -205,9 +205,19 @@ body {
   width: 0px;
   background: transparent; }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1250px) {
   * {
-    font-size: .5vw; }
+    font-size: .4vw; }
+    * .normal-size {
+      font-size: 3rem; }
+  .main-title h1 {
+    font-size: 11vw; }
+  .main-title h2 {
+    font-size: 5vw; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1250px) {
+  * {
+    font-size: .9vw; }
     * .normal-size {
       font-size: 3rem; }
   .main-title h1 {
@@ -217,7 +227,7 @@ body {
 
 @media only screen and (min-width: 750px) and (max-width: 950px) {
   * {
-    font-size: .7vw; }
+    font-size: .9vw; }
     * .normal-size {
       font-size: 3rem; } }
 

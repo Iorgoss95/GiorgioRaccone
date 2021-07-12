@@ -3,8 +3,8 @@
     align-self: center;
 
     &__shape {
-        width: 26rem;
-        height: 26rem;      
+        width: 27rem;
+        height: 27rem;      
         
         position: relative;
         overflow: hidden;
@@ -15,7 +15,7 @@
     
     &__img {
         height: 100%;
-        transform: translateX(2.6rem) translateY(0.4rem) scale(1.5);
+        transform: translateX(3rem) translateY(0.4rem) scale(1.5);
         backface-visibility: hidden;
         transition: all .4s;
         
@@ -43,7 +43,7 @@
     }
 
     &:hover &__img {
-        transform: translateX(2.6rem) scale(1.45);
+        transform: translateX(3rem) scale(1.45);
         filter: blur(2px) brightness(80%);
     }
 
