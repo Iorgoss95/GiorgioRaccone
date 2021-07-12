@@ -26,6 +26,10 @@ body{
          user-select:none;
      }
 
+     &::-webkit-scrollbar {
+        display: none;
+      }
+
 }
 
 .top-container, .middle-container, .bottom-container{
