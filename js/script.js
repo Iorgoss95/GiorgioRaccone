@@ -5,7 +5,7 @@
 let color = window.getComputedStyle(document.querySelector(".top-container")).backgroundColor;
 document.querySelector("meta[name='theme-color']").setAttribute("content", color);
 
-const btn = document.querySelectorAll(".btn-toggle");
+const btn = document.querySelectorAll(".btn-toggle_2");
 let i = 2;
 
 function clickButton() {

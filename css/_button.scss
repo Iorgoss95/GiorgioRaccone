@@ -28,3 +28,105 @@
         box-shadow: 0 .5rem 1rem rgba(black,0);
     }
 }
+
+//prova new button
+.btn-toggle_2{
+    align-self: center;
+    justify-self: center;
+   
+    cursor: pointer;
+}
+
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.button-text {
+    width: 38rem;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 8rem;
+      height: 8rem;
+      background: var(--color-3);
+      border-radius: 10rem;
+      
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 7rem;
+        margin: auto;
+
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          left: 2rem;
+          width: 2.8rem;
+          height: .3rem;
+          background: none;
+          //lati freccia
+          &::before {
+            position: absolute;
+            content: '';
+            top: -0.52rem;
+            right: 0.1rem;
+            width: 1rem;
+            height: 1rem;
+            border-top: 0.4rem solid var(--color-2);
+            border-right: 0.4rem solid var(--color-2);
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: .8rem;
+      left: 0rem;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: var(--color-5);
+      line-height: 1.6;
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      
+      .icon {
+        &.arrow {
+        background: var(--color-2);
+        transform: translate(3rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: var(--color-2);
+    }
+  }
+}
+
