@@ -6,6 +6,7 @@ $color-black:#222222;
     --color-1: #264c7d;
     --color-3: #fcad44;
     --color-4: #d5e3f4;
+    --color-5: #d5e3f4;
 }
 
 .theme-2{
@@ -13,6 +14,7 @@ $color-black:#222222;
     --color-2: #9388A2;
     --color-3: #170B3B;
     --color-4: #d5e3f4;
+    --color-5: var(--color-2);
 }
 
 .theme-3{
@@ -20,6 +22,8 @@ $color-black:#222222;
     --color-2: #B4FEE7;
     --color-3: #FD49A0;
     --color-4: #d5e3f4;
+    --color-5: var(--color-2);
+
 }
 
 .theme-4{
@@ -27,6 +31,8 @@ $color-black:#222222;
     --color-2: #A3EBB1;
     --color-3: #21B6A8;
     --color-4: #d5e3f4;
+    --color-5: var(--color-2);
+
 }
 
 .theme-5{
@@ -34,6 +40,8 @@ $color-black:#222222;
     --color-2: #40B0DF;
     --color-3: #FFD53D;
     --color-4: #d5e3f4;
+    --color-5: var(--color-2);
+
 }
 
 .theme-6{
@@ -41,5 +49,7 @@ $color-black:#222222;
     --color-2: #35afa4;
     --color-3: #d5e3f4;
     --color-4: #d5e3f4;
+    --color-5: var(--color-2);
+
 }
 

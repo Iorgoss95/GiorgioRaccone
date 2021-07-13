@@ -16,7 +16,7 @@ function clickButton() {
     let color = window.getComputedStyle(document.querySelector(".top-container")).backgroundColor;
     document.querySelector("meta[name='theme-color']").setAttribute("content", color);
     
-    if (i > 5) {
+    if (i > 6) {
         //i > of number oh themes in _colors.scss file
         document.body.classList.remove("theme-" + (i))
         i = 2;
