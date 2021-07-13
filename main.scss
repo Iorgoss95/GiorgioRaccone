@@ -99,39 +99,10 @@ body{
     height: 4.4rem;
 }
 
-.foo-card{
-    padding: .5rem 0;
-    
-    
-    // cool link
-    .cool-link {
-        display: inline-block;
-        
-        text-decoration: none;
-    }
-    
-    .cool-link::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: .4rem;
-        background: var(--color-2);
-        transition: width .3s;
-    }
-    
-    .cool-link:hover::after {
-        width: 100%;
-        
-    }
-
-    .copy2021{
-        font-size: 1.4vh;
-        color: var(--color-2);
-    }
-}
 
 
 @import "css/utility";
+@import "css/foo_wrapper";
 @import "css/photo";
 @import "css/button";
 @import "css/grid";
