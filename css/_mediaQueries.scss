@@ -8,6 +8,13 @@
         .normal-size{
             font-size: 1.5vw;
         }
+        .big-size{
+            font-size: 3.5vw;
+        }
+
+        //.middle-container{
+           
+        //}
         
         
     }
@@ -76,6 +83,10 @@
             line-height: 3rem;
         }
 
+        .scrollbar{
+            opacity: 0;
+        }
+        
         .main-title{
 
             h1{
@@ -83,6 +94,18 @@
             }
             h2 {
                 font-size: 10vw;
+            }
+        }
+
+        .middle-container{
+            display: flex;
+        }
+
+        .section-card{
+
+            &__title{
+                font-size: 5vh;
+                padding: 3vh 0;
             }
         }
     }

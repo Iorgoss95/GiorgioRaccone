@@ -1,0 +1,30 @@
+// UTILITY CALSSES--------------------------
+
+.normal-size{
+    font-size: 2.5rem;
+}
+.big-size{
+    font-size: 3.5rem;
+}
+
+.big-divider{
+    content: "";
+    height: 10rem;
+}
+.small-divider{
+    content: "";
+    height: 5rem;
+}
+
+.line-height{
+    line-height: 5rem;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    display: block;
+}

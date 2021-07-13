@@ -17,6 +17,8 @@ body{
     display: flex;
     flex-direction: column;
 
+
+
     &.disable-text-selection{
         -ms-user-select:none;
         -moz-user-select:none;
@@ -52,7 +54,11 @@ body{
     background-color: var(--color-2);
     color: var(--color-3);
     
+    
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5rem;
+    grid-column-gap: 5rem;
    
 }
 
@@ -64,28 +70,6 @@ body{
         color: inherit;
         text-decoration: none;
     }
-}
-// UTILITY CALSSES--------------------------
-.copy2021{
-    font-size: 1rem;
-    color: var(--color-2);
-}
-
-//   UTILITY CLASSES
-.normal-size{
-    font-size: 2.5rem;
-}
-.big-size{
-    font-size: 4rem;
-}
-
-.big-divider{
-    content: "";
-    height: 10rem;
-}
-.small-divider{
-    content: "";
-    height: 5rem;
 }
 
 
@@ -102,27 +86,22 @@ body{
     }
 }
 
-.section-title{
-    span{
-        font-size: 2rem;
-        padding: .5rem;
+.section-card{
+
+    &__title{
+        padding: 4.2vh 0;
     }
-    
 }
 
-.line-height{
-    line-height: 5rem;
+#btc{
+    width: 4.4rem;
+    height: 4.4rem;
 }
-
-.align-center{
-    text-align: center;
-}
-
 
 .foo-card{
     padding: .5rem 0;
-
-
+    
+    
     // cool link
     .cool-link {
         display: inline-block;
@@ -143,10 +122,17 @@ body{
         width: 100%;
         
     }
+
+    .copy2021{
+        font-size: 1.4vh;
+        color: var(--color-2);
+    }
 }
 
 
+@import "css/utility";
 @import "css/photo";
 @import "css/button";
+@import "css/grid";
 @import "css/scrollbar";
 @import "css/mediaQueries";

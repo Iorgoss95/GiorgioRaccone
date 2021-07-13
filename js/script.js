@@ -1,7 +1,6 @@
 //javascript file dor my personal site
 
 
-
 //get backgrund color and set to content property of meta tag
 let color = window.getComputedStyle(document.querySelector(".top-container")).backgroundColor;
 document.querySelector("meta[name='theme-color']").setAttribute("content", color);
@@ -80,6 +79,3 @@ window.addEventListener("scroll", function(){
 }, false)
 
     
-
-
-
