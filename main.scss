@@ -74,17 +74,7 @@ body{
 
 
 //   OTHER CLASSES----------------------
-.main-title{
-    display: flex;
-    flex-direction: column;    
-    font-family: 'Fredoka One', cursive;
-    h1{
-        font-size: 15vw;
-    }
-    h2 {
-        font-size: 10vw;
-    }
-}
+
 
 .section-card{
 
@@ -94,14 +84,11 @@ body{
     }
 }
 
-#btc{
-    width: 4.4rem;
-    height: 4.4rem;
-}
 
 
 
 @import "css/utility";
+@import "css/bouncing-letter";
 @import "css/foo_wrapper";
 @import "css/photo";
 @import "css/button";

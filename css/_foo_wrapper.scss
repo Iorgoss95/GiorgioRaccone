@@ -29,19 +29,3 @@
     }
 }
 
-.contact-me{
-    display: flex;
-    flex-direction: row;
-
-    &__letter {
-        display: inline-block;
-        font-size: 6rem;
-        
-        &:hover{ 
-            transition: all .2s;
-            transform: scale(1.6) rotateZ(-15deg) ;
-    
-       }
-    }
-        
-}

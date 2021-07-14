@@ -82,3 +82,14 @@ $color-1: #0067B3;
 $color-2: #40B0DF;
 $color-3: #FFD53D;
 */
+
+
+<div class="main-title">
+            <h1 class="big-size">
+                Hi I'm Giorgio!
+            </h1>
+            <div class="small-divider"></div>
+            <h2 class="big-size">
+                I'm a junior web developer.
+            </h2>
+        </div>
