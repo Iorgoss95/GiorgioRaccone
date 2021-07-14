@@ -37,11 +37,14 @@
             font-size: 2vw;
         }
         
+        .contact-me{
+            font-size: 4.5vw;
+        }
         .section-card{
 
             text-align: center;
             &__title{
-                font-size: 4.5vw;
+                font-size: 5.5vw;
                 padding: 3vh 0;
             }
         }
@@ -157,6 +160,10 @@
 
         .line-height{
             line-height: 3rem;
+        }
+
+        .contact-me{
+            font-size: 8.5vw;
         }
 
         .scrollbar{

@@ -30,5 +30,29 @@
 }
 
 .contact-me{
-    font-size: 8vh;
+    
+    span {
+        transform: rotate(50deg) ;
+        font-size: 8vw;
+        
+        &:hover{ 
+           color: var(--color-1);
+    
+       }
+    }
+
+    
+}
+
+span {
+    width: auto;
+    height: auto;
+    background-color: burlywood;
+    transform: rotate(45deg) ;
+   
+    
+    &:hover{ 
+       color: var(--color-1);
+
+   }
 }
