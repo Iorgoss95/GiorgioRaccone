@@ -47,7 +47,7 @@
         }
         .section-card{
 
-            text-align: center;
+            
             &__title{
                 font-size: 5.5vw;
                 padding: 3vh 0;
@@ -64,6 +64,10 @@
             font-size: 12vw;
             margin: 0 -0.2rem;
         }
+    }
+    .mini-cont{
+        display: inline-block;
+        padding-right: 7rem;
     }
 }
 
