@@ -47,5 +47,10 @@
         filter: blur(2px) brightness(80%);
     }
 
+    &:hover &__shape{
+        transition: all .2s;
+        border: var(--color-3) 1.4rem solid;
+    }
+
     
 }
