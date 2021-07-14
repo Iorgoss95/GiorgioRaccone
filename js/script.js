@@ -1,6 +1,18 @@
 //javascript file dor my personal site
 
 
+function setOpacity() {
+    const op = document.querySelectorAll(".opacity");
+    
+    op.forEach(i => {
+        i.classList.add("no-opacity");
+    
+    })   
+    
+}
+
+setOpacity();
+
 //get backgrund color and set to content property of meta tag
 let color = window.getComputedStyle(document.querySelector(".top-container")).backgroundColor;
 document.querySelector("meta[name='theme-color']").setAttribute("content", color);
@@ -58,7 +70,6 @@ function getmeasurements(){
 function amountscrolled(){
     var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
     var pctScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
-    console.log(pctScrolled + ' num % scrolled')
     return pctScrolled;
 }
  

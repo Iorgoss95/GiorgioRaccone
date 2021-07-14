@@ -32,3 +32,14 @@
 .font-inherit{
     font-size: inherit;
 }
+
+.opacity{
+    opacity: 0;
+    transform: translateY(20rem);
+}
+
+.no-opacity{
+    opacity: 1;
+    transition: all .8s;
+    transform: translateY(0);
+}
