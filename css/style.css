@@ -149,19 +149,15 @@ body {
     font-size: 1.4vh;
     color: var(--color-2); }
 
-.contact-me span {
-  transform: rotate(50deg);
-  font-size: 8vw; }
-  .contact-me span:hover {
-    color: var(--color-1); }
-
-span {
-  width: auto;
-  height: auto;
-  background-color: burlywood;
-  transform: rotate(45deg); }
-  span:hover {
-    color: var(--color-1); }
+.contact-me {
+  display: flex;
+  flex-direction: row; }
+  .contact-me__letter {
+    display: inline-block;
+    font-size: 6rem; }
+    .contact-me__letter:hover {
+      transition: all .2s;
+      transform: scale(1.6) rotateZ(-15deg); }
 
 .photo {
   align-self: center; }

@@ -30,29 +30,18 @@
 }
 
 .contact-me{
-    
-    span {
-        transform: rotate(50deg) ;
-        font-size: 8vw;
+    display: flex;
+    flex-direction: row;
+
+    &__letter {
+        display: inline-block;
+        font-size: 6rem;
         
         &:hover{ 
-           color: var(--color-1);
+            transition: all .2s;
+            transform: scale(1.6) rotateZ(-15deg) ;
     
        }
     }
-
-    
-}
-
-span {
-    width: auto;
-    height: auto;
-    background-color: burlywood;
-    transform: rotate(45deg) ;
-   
-    
-    &:hover{ 
-       color: var(--color-1);
-
-   }
+        
 }
