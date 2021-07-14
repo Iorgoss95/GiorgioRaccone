@@ -368,7 +368,18 @@ button {
       text-align: center; }
       * .section-card__title {
         font-size: 5vh;
-        padding: 3vh 0; } }
+        padding: 3vh 0; }
+  button .circle {
+    width: 100% !important;
+    border-radius: 10rem !important; }
+  button .icon.arrow {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  button .icon::before {
+    opacity: 0; }
+  button .button-text {
+    transform: translateX(-1rem);
+    color: var(--color-2) !important; } }
 
 @media only screen and (min-width: 450px) and (max-width: 750px) {
   * {
@@ -381,25 +392,47 @@ button {
       text-align: center; }
       * .section-card__title {
         font-size: 10vw;
-        padding: 3vh 0; } }
+        padding: 3vh 0; }
+  button .circle {
+    width: 100% !important;
+    border-radius: 10rem !important; }
+  button .icon.arrow {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  button .icon::before {
+    opacity: 0; }
+  button .button-text {
+    transform: translateX(-1rem);
+    color: var(--color-2) !important; } }
 
 @media only screen and (max-width: 450px) {
   * {
     font-size: 2vw; }
-    * .normal-size {
-      font-size: 4vw; }
-    * .line-height {
-      line-height: 3rem; }
-    * .scrollbar {
-      opacity: 0; }
-    * .main-title h1 {
-      font-size: 20vw; }
-    * .main-title h2 {
-      font-size: 10vw; }
-    * .middle-container {
-      display: flex; }
-    * .section-card {
-      text-align: center; }
-      * .section-card__title {
-        font-size: 12vw;
-        padding: 3vh 0; } }
+  .normal-size {
+    font-size: 4vw; }
+  .line-height {
+    line-height: 3rem; }
+  .scrollbar {
+    opacity: 0; }
+  .main-title h1 {
+    font-size: 20vw; }
+  .main-title h2 {
+    font-size: 10vw; }
+  .middle-container {
+    display: flex; }
+  .section-card {
+    text-align: center; }
+    .section-card__title {
+      font-size: 12vw;
+      padding: 3vh 0; }
+  button .circle {
+    width: 100% !important;
+    border-radius: 10rem !important; }
+  button .icon.arrow {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  button .icon::before {
+    opacity: 0; }
+  button .button-text {
+    transform: translateX(-1rem);
+    color: var(--color-2) !important; } }
