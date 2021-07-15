@@ -100,6 +100,22 @@ body {
   padding: 0;
   align-self: center; }
 
+.section-card__skills {
+  background-color: var(--color-3);
+  color: var(--color-2);
+  padding: 5rem;
+  display: flex;
+  flex-direction: row; }
+
+.opacity {
+  opacity: 0;
+  transform: translateY(20rem); }
+
+.no-opacity {
+  opacity: 1;
+  transform: translateY(0rem);
+  animation: moveUp 1s; }
+
 .normal-size {
   font-size: 2.5rem; }
 
@@ -127,31 +143,6 @@ body {
 .font-inherit {
   font-size: inherit; }
 
-.opacity {
-  opacity: 0;
-  transform: translateY(20rem); }
-
-.no-opacity {
-  opacity: 1;
-  transition: all .8s;
-  transform: translateY(0); }
-
-.main-title__size {
-  font-size: 8vw; }
-
-.main-title__size__big {
-  font-size: 13vw; }
-
-.contact-me__size {
-  font-size: 6rem; }
-
-.zoom-letter {
-  display: flex;
-  flex-direction: row;
-  display: inline-block; }
-  .zoom-letter__letter {
-    display: inline-block; }
-
 @keyframes bouncing {
   0% {
     transform: scale(1, 1); }
@@ -172,11 +163,97 @@ body {
   100% {
     transform: scale(1) rotate(0deg); } }
 
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveSx {
+  0% {
+    opacity: 0;
+    transform: translateX(25rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveDx {
+  0% {
+    opacity: 0;
+    transform: translateX(-25rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.moveUp {
+  animation: moveUp .8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards; }
+
+.moveDown {
+  animation: moveDown .8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards; }
+
+.moveDx {
+  animation: moveDx .8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards; }
+
+.moveSx {
+  animation: moveSx .8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards; }
+
+.xs-delay {
+  animation-delay: .3s; }
+
+.s-delay {
+  animation-delay: .5s; }
+
+.m-delay {
+  animation-delay: 1s; }
+
+.l-delay {
+  animation-delay: 1.5s; }
+
+.main-title__size {
+  font-size: 8vw; }
+
+.main-title__size__big {
+  font-size: 13vw; }
+
+.contact-me__size {
+  font-size: 6rem; }
+
+.zoom-letter {
+  display: flex;
+  flex-direction: row;
+  display: inline-block; }
+  .zoom-letter__letter {
+    display: inline-block; }
+
 .bounce:hover {
   animation: bouncing 0.4s; }
 
 .rotate:hover {
   animation: rotate 0.4s; }
+
+.small-delay-1 {
+  animation-delay: .5s; }
+
+.big-delay {
+  animation-delay: 1s; }
 
 .foo-card {
   padding: .5rem 0; }
@@ -207,7 +284,7 @@ body {
     border: var(--color-3) 0.75rem solid; }
   .photo__img {
     height: 100%;
-    transform: translateX(3rem) translateY(0.4rem) scale(1.6);
+    transform: translateX(1.3rem) translateY(0.4rem) scale(1.8);
     backface-visibility: hidden;
     transition: all .4s; }
   .photo__caption {
@@ -216,7 +293,7 @@ body {
     left: 50%;
     transform: translate(-50%, 20%);
     color: #F9FEFB;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     opacity: 0;
     transition: all .4s;
@@ -225,8 +302,8 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .photo:hover .photo__img {
-    transform: translateX(3rem) scale(1.45);
-    filter: blur(2px) brightness(80%); }
+    transform: translateX(1.3rem) translateY(0.4rem) scale(1.3);
+    filter: blur(2px) brightness(82%); }
   .photo:hover .photo__shape {
     transition: all .2s;
     border: var(--color-3) 1rem solid; }
@@ -299,7 +376,7 @@ button {
           button.button-text .circle .icon.arrow::before {
             position: absolute;
             content: '';
-            top: -0.52rem;
+            top: -0.55rem;
             right: 0.1rem;
             width: 1rem;
             height: 1rem;
@@ -337,7 +414,7 @@ button {
   grid-column: 2 / 3; }
 
 .item__4 {
-  grid-column: 2 / 3; }
+  grid-column: 1 / 3; }
 
 .item__5 {
   grid-column: 1 / 2;

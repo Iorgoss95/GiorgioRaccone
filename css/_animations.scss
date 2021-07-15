@@ -1,0 +1,101 @@
+@keyframes bouncing {
+    0% {transform: scale(1, 1)}
+    30% {transform: scale(1.2, .8)}
+    75% {transform: scale(.8, 1.3)}
+    100% {transform: scale(1, 1)}
+}
+
+@keyframes rotate {
+    0% {transform: scale(1); }
+    25% {transform: scale(1.3) rotate(20deg);}
+    75% {transform: scale(1.3) rotate(-5deg);}
+    100% {transform: scale(1) rotate(0deg);}
+}
+
+@keyframes moveDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-25rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes moveUp {
+    0%{
+        opacity: 0;
+        transform: translateY(25rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveSx {
+    0%{
+        opacity: 0;
+        transform: translateX(25rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveDx {
+    0%{
+        opacity: 0;
+        transform: translateX(-25rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// animation classes
+.moveUp{
+    animation: moveUp .8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.moveDown{
+    animation: moveDown .8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.moveDx{
+    animation: moveDx .8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.moveSx{
+    animation: moveSx .8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.xs-delay{
+    animation-delay: .3s;
+}
+
+.s-delay{
+    animation-delay: .5s;
+}
+
+.m-delay{
+    animation-delay: 1s;
+}
+
+.l-delay{
+    animation-delay: 1.5s;
+}

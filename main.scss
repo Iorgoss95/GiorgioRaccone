@@ -84,12 +84,32 @@ body{
         padding: 0;
         align-self: center;
     }
+    
+    &__skills{
+        background-color: var(--color-3);
+        color: var(--color-2);
+        padding: 5rem;
+        display: flex;
+        flex-direction: row;
+        }
+}
+
+
+.opacity{
+    opacity: 0;
+    transform: translateY(20rem);
+}
+
+.no-opacity{
+    opacity: 1;
+    transform: translateY(0rem);
+    animation: moveUp 1s;
 }
 
 
 
-
 @import "css/utility";
+@import "css/animations";
 @import "css/bouncing-letter";
 @import "css/foo_wrapper";
 @import "css/photo";

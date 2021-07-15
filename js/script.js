@@ -1,18 +1,6 @@
 //javascript file dor my personal site
 
 
-function setOpacity() {
-    const op = document.querySelectorAll(".opacity");
-    
-    op.forEach(i => {
-        i.classList.add("no-opacity");
-    
-    })   
-    
-}
-
-setOpacity();
-
 //get backgrund color and set to content property of meta tag
 let color = window.getComputedStyle(document.querySelector(".top-container")).backgroundColor;
 document.querySelector("meta[name='theme-color']").setAttribute("content", color);
@@ -89,4 +77,23 @@ window.addEventListener("scroll", function(){
 
 }, false)
 
-    
+
+//loading elemnts on scroll-----------------------------
+
+var parent=document.getElementById("parent-div");
+const element = document.querySelectorAll(".opacity");
+
+window.onscroll = function(){
+    element.forEach(item => {
+       
+        if(document.documentElement.scrollTop>=item.offsetTop -550){
+            item.classList.add("no-opacity");
+            console.log("dentro if")
+        }
+        else if(document.documentElement.scrollTop<=item.offsetTop-700){
+            item.classList.remove("no-opacity");
+        }
+
+    })
+
+};
