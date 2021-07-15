@@ -6,7 +6,7 @@
   --color-5: #d5e3f4;
   --color-6: var(--color-3); }
 
-.theme-2 {
+.theme-3 {
   --color-1: #EA101C;
   --color-2: #B4F8C8;
   --color-3: #15E052;
@@ -14,7 +14,7 @@
   --color-5: var(--color-2);
   --color-6: var(--color-3); }
 
-.theme-3 {
+.theme-2 {
   --color-1: #99dad3;
   --color-2: #1e386b;
   --color-3: #22d268;
@@ -187,13 +187,13 @@ body {
     content: '';
     display: block;
     width: 0;
-    height: .4rem;
+    height: .5rem;
     background: var(--color-2);
     transition: width .3s; }
   .foo-card .cool-link:hover::after {
     width: 100%; }
   .foo-card .copy2021 {
-    font-size: 1.4vh;
+    font-size: 1.8vh;
     color: var(--color-2); }
 
 .photo {
@@ -292,7 +292,7 @@ button {
         margin: auto; }
         button.button-text .circle .icon.arrow {
           transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-          left: 2rem;
+          left: 1.8rem;
           width: 2.8rem;
           height: .3rem;
           background: none; }
@@ -385,6 +385,8 @@ button {
       font-size: 1.5vw; }
     * .big-size {
       font-size: 3.5vw; }
+    * .copy2021 {
+      font-size: 1.7vh; }
   .mini-cont {
     display: inline-block;
     padding-right: 7rem; }
@@ -398,13 +400,15 @@ button {
 @media only screen and (min-width: 1000px) and (max-width: 1250px) {
   * {
     font-size: .7vw; }
-    * .normal-size {
-      font-size: 2vw; }
-    * .contact-me {
-      font-size: 4.5vw; }
-    * .section-card__title {
-      font-size: 5.5vw;
-      padding: 3vh 0; }
+  .normal-size {
+    font-size: 2vw; }
+  .contact-me {
+    font-size: 4.5vw; }
+  .section-card__title {
+    font-size: 5.5vw;
+    padding: 3vh 0; }
+  .copy2021 {
+    font-size: 1.3vh; }
   .main-title__size__big {
     font-size: 17vw; }
   .main-title__size {
@@ -421,6 +425,8 @@ button {
       font-size: 3vw; }
     * .middle-container {
       display: flex; }
+    * .copy2021 {
+      font-size: 1.3vh; }
     * .section-card {
       text-align: center; }
       * .section-card__title {

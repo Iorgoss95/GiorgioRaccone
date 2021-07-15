@@ -12,6 +12,9 @@
             font-size: 3.5vw;
         }
 
+        .copy2021{
+            font-size: 1.7vh;
+        }
         //.middle-container{
            
         //}
@@ -37,7 +40,7 @@
 @media only screen and (min-width: 1000px) and (max-width: 1250px)  {
     *  {
         font-size: .7vw;
-        
+    }
         .normal-size{
             font-size: 2vw;
         }
@@ -53,8 +56,10 @@
                 padding: 3vh 0;
             }
         }
+        .copy2021{
+            font-size: 1.3vh;
+        }
         
-    }
     .main-title{
         &__size__big{
             font-size: 17vw;
@@ -80,6 +85,9 @@
         }
         .middle-container{
             display: flex;
+        }
+        .copy2021{
+            font-size: 1.3vh;
         }
 
 
