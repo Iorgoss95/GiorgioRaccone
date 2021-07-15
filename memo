@@ -1,95 +1,20 @@
-<button class="btn-toggle">Toggle Dark-Mode</button>
+$(window).scroll(function(){
+      if  ($(window).scrollTop() >= $(document).height() - $(window).height()){
+           AddMoreContent();
+      }
+ });   
 
 
-//theme 1
-    $color-1: #603F8B;
-    $color-2: #FD49A0;
-    $color-3: #B4FEE7;
-    $color-4: #A16AE8;
-//theme 2
-    $color-2: #341948;
-    $color-3: #170B3B;
-    $color-4: #9388A2;
-//theme 3
-   $color-1: #04B16F;
-    $color-2: #A3EBB1;
-    $color-3: #21B6A8;
-//theme 4
-   $color-1: #900300;
-    $color-2: #FF671B;
-    $color-3: #CC5216;
-//theme 5
-   $color-1: #0067B3;
-    $color-2: #40B0DF;
-    $color-3: #FFD53D;
-
-
-
-
-.top-container{
-    background-color: var(--color-1);
-    color: $color-2;
-    
-    display: flex;
-    flex-direction: column;
-    
+ // alternative
+ 
+ var body=document.getElementsByTagName("body")[0];
+var parent=document.getElementById("parent-div");
+var child=document.getElementById("child-div");
+body.onscroll = function(){
+//console.log(documenhttps://fiddle.jshell.net/3urv0tp0/#tidyt.getElementById("child-div").style.top)
+if(document.documentElement.scrollTop>=child.offsetTop)//Adjust Tolerance as you want
+{
+   child.style.display="block"
 }
 
-.middle-container{
-    background-color: $color-2;
-    color: $color-3;
-    height: 150rem;
-}
-
-.bottom-container{
-    background-color: $color-3;
-    color: $color-2;
-    
-    a{
-        color: inherit;
-        text-decoration: none;
-    }
-}
-//----------------------------------------
-.normal-size{
-    font-size: 6rem;
-}
-
-.copy2021{
-    font-size: 2rem;
-    color: $color-2;
-}
-
-
-/*
-$color-1: #A16AE8;
-$color-2: #B4FEE7;
-$color-3: #FD49A0;
-
-$color-1: #341948;
-$color-2: #9388A2;
-$color-3: #170B3B;
-
-$color-1: #04B16F;
-$color-2: #A3EBB1;
-$color-3: #21B6A8;
-
-$color-1: #FF671B;
-$color-2: #900300;
-$color-3: #CC5216;
-
-$color-1: #0067B3;
-$color-2: #40B0DF;
-$color-3: #FFD53D;
-*/
-
-
-<div class="main-title">
-            <h1 class="big-size">
-                Hi I'm Giorgio!
-            </h1>
-            <div class="small-divider"></div>
-            <h2 class="big-size">
-                I'm a junior web developer.
-            </h2>
-        </div>
+};
