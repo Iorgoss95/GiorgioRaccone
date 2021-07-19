@@ -55,12 +55,7 @@ body{
 .middle-container{
     background-color: var(--color-2);
     color: var(--color-6);
-    
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 5rem;
-    grid-column-gap: 5rem;
+    display: flex;
    
 }
 
@@ -80,29 +75,26 @@ body{
 
 .section-card{
 
+    color: var(--color-3);
+    padding: 5rem;
+    margin: 5rem 0;
+    
     &__title{
         padding: 0;
         align-self: center;
     }
-    
-    &__skills{
-        background-color: var(--color-3);
-        color: var(--color-2);
-        padding: 5rem;
-        display: flex;
-        flex-direction: row;
-        }
+
 }
+
+
 
 
 .opacity{
     opacity: 0;
-    transform: translateY(20rem);
 }
 
 .no-opacity{
     opacity: 1;
-    transform: translateY(0rem);
     animation: moveUp 1s;
 }
 

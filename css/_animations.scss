@@ -27,6 +27,7 @@
     0%{
         opacity: 0;
         transform: translateY(25rem);
+        
     }
 
     100%{
@@ -98,4 +99,8 @@
 
 .l-delay{
     animation-delay: 1.5s;
+}
+
+.xl-delay{
+    animation-delay: 2.3s;
 }

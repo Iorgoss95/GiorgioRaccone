@@ -4,6 +4,7 @@
 @media only screen and (min-width: 1250px) {
     *  {
         font-size: .4vw;
+    }
         
         .normal-size{
             font-size: 1.5vw;
@@ -15,12 +16,18 @@
         .copy2021{
             font-size: 1.7vh;
         }
-        //.middle-container{
-           
-        //}
         
+        .section-card{
+            display: flex;
+            flex-direction: row;
+
+            &__title{
+                width: 50%;
+            }
+
+        }
         
-    }
+
     .mini-cont{
         display: inline-block;
         padding-right: 7rem;
@@ -83,9 +90,7 @@
         .normal-size{
             font-size: 3vw;
         }
-        .middle-container{
-            display: flex;
-        }
+
         .copy2021{
             font-size: 1.3vh;
         }
@@ -142,9 +147,7 @@
         .normal-size{
             font-size: 3vw;
         }
-        .middle-container{
-            display: flex;
-        }
+
 
         .section-card{
 
@@ -221,10 +224,6 @@
             margin: 0 -0.2rem;
         }
     }
-
-        .middle-container{
-            display: flex;
-        }
 
         .section-card{
 
