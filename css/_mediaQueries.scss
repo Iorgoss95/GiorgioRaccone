@@ -161,14 +161,18 @@
     
 
     .main-title{
-        &__size__big{
-            font-size: 15vw;
-            margin: 0 0;
-        }
         &__size{
             font-size: 9vw;
             margin: 0 ;
+            
+            &__big{
+                font-size: 15vw;
+                margin: 0 0;
+            }
         }
+    }
+    .exp_fix{
+        margin: 0 -1px;
     }
 
     button{
@@ -216,13 +220,14 @@
         }
         
         .main-title{
-        &__size__big{
-            font-size: 20vw;
-            margin: 0 0.1rem ;
-        }
         &__size{
             font-size: 10vw;
             margin: 0 -0.2rem;
+            
+            &__big{
+                font-size: 20vw;
+                margin: 0 0.1rem;
+            }
         }
     }
 
@@ -232,6 +237,10 @@
                 font-size: 9vw;
                 padding: 3vh 0;
             }
+        }
+
+        .exp_fix{
+            margin: 0 -4.5px;
         }
     //button hover
     button{

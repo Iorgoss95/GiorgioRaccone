@@ -527,12 +527,14 @@ button {
     .section-card__title {
       font-size: 8vw;
       padding: 3vh 0; }
-  .main-title__size__big {
-    font-size: 15vw;
-    margin: 0 0; }
   .main-title__size {
     font-size: 9vw;
     margin: 0; }
+    .main-title__size__big {
+      font-size: 15vw;
+      margin: 0 0; }
+  .exp_fix {
+    margin: 0 -1px; }
   button .circle {
     width: 100% !important;
     border-radius: 10rem !important; }
@@ -556,17 +558,19 @@ button {
     font-size: 8.5vw; }
   .scrollbar {
     opacity: 0; }
-  .main-title__size__big {
-    font-size: 20vw;
-    margin: 0 0.1rem; }
   .main-title__size {
     font-size: 10vw;
     margin: 0 -0.2rem; }
+    .main-title__size__big {
+      font-size: 20vw;
+      margin: 0 0.1rem; }
   .section-card {
     text-align: center; }
     .section-card__title {
       font-size: 9vw;
       padding: 3vh 0; }
+  .exp_fix {
+    margin: 0 -4.5px; }
   button .circle {
     width: 100% !important;
     border-radius: 10rem !important; }
