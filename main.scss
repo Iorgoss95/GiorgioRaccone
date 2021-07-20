@@ -17,10 +17,6 @@ body{
     display: flex;
     flex-direction: column;
 
-    
-
-
-
     &.disable-text-selection{
         -ms-user-select:none;
         -moz-user-select:none;
