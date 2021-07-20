@@ -86,10 +86,10 @@ const element = document.querySelectorAll(".opacity");
 window.onscroll = function(){
     element.forEach(item => {
        
-        if(document.documentElement.scrollTop>=item.offsetTop -550){
+        if(document.documentElement.scrollTop>=item.offsetTop -700){
             item.classList.add("no-opacity");
         }
-        else if(document.documentElement.scrollTop<=item.offsetTop-700){
+        else if(document.documentElement.scrollTop<=item.offsetTop-400){
             item.classList.remove("no-opacity");
         }
 

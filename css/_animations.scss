@@ -23,11 +23,21 @@
         transform: translateY(0);
     }
 }
+@keyframes moveDownRev {
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(25rem);
+    }
+}
 @keyframes moveUp {
     0%{
         opacity: 0;
         transform: translateY(25rem);
-        
     }
 
     100%{

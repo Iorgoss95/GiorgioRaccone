@@ -9,7 +9,7 @@
 .theme-3 {
   --color-1: #EA101C;
   --color-2: #B4F8C8;
-  --color-3: #15E052;
+  --color-3: #1ed760;
   --color-4: #AE0900;
   --color-5: var(--color-2);
   --color-6: var(--color-3); }
@@ -94,15 +94,24 @@ body {
     text-decoration: none; }
 
 .section-card {
-  color: var(--color-3);
+  background: var(--color-6);
+  color: var(--color-2);
   padding: 5rem;
-  margin: 5rem 0; }
+  margin: 5rem 0;
+  box-shadow: 0px 10px 20px 0px rgba(51, 16, 16, 0.2); }
   .section-card__title {
     padding: 0;
     align-self: center; }
 
+#section-card-center {
+  display: block; }
+
+.row-reverse {
+  order: 2; }
+
 .opacity {
-  opacity: 0; }
+  opacity: 0;
+  animation: moveDownRev 1s; }
 
 .no-opacity {
   opacity: 1;
@@ -162,6 +171,14 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+
+@keyframes moveDownRev {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    transform: translateY(25rem); } }
 
 @keyframes moveUp {
   0% {
@@ -435,7 +452,8 @@ button {
     font-size: 1.7vh; }
   .section-card {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    width: 100%; }
     .section-card__title {
       width: 50%; }
   .mini-cont {
@@ -456,7 +474,7 @@ button {
   .contact-me {
     font-size: 4.5vw; }
   .section-card__title {
-    font-size: 5.5vw;
+    font-size: 6.5vw;
     padding: 3vh 0; }
   .copy2021 {
     font-size: 1.3vh; }
@@ -479,7 +497,7 @@ button {
     * .section-card {
       text-align: center; }
       * .section-card__title {
-        font-size: 5vh;
+        font-size: 7vw;
         padding: 3vh 0; }
   .main-title__size__big {
     font-size: 15vw;
@@ -507,7 +525,7 @@ button {
   .section-card {
     text-align: center; }
     .section-card__title {
-      font-size: 10vw;
+      font-size: 8vw;
       padding: 3vh 0; }
   .main-title__size__big {
     font-size: 15vw;
@@ -545,9 +563,10 @@ button {
     font-size: 10vw;
     margin: 0 -0.2rem; }
   .section-card {
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
     .section-card__title {
-      font-size: 12vw;
+      font-size: 9vw;
       padding: 3vh 0; }
   button .circle {
     width: 100% !important;
