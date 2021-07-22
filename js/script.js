@@ -1,7 +1,7 @@
 //javascript file dor my personal site
 
 
-//get backgrund color and set to content property of meta tag
+//get background color and set to content property of meta tag
 let color = window.getComputedStyle(document.querySelector(".top-container")).backgroundColor;
 document.querySelector("meta[name='theme-color']").setAttribute("content", color);
 
@@ -73,7 +73,7 @@ window.addEventListener("scroll", function(){
         amountscrolled()
     }, 50)
 
-    document.querySelector(".scrollbar").setAttribute("style", "transform: translateY("+( amountscrolled() -100)+"vh)");
+    document.querySelector(".scrollbar").setAttribute("style", "transform: translateY("+( amountscrolled() -99.5)+"vh)");
 
 }, false)
 
@@ -86,12 +86,15 @@ const element = document.querySelectorAll(".opacity");
 window.onscroll = function(){
     element.forEach(item => {
        
-        if(document.documentElement.scrollTop>=item.offsetTop -700){
+        if(document.documentElement.scrollTop>=item.offsetTop -900){
             item.classList.add("no-opacity");
         }
-        else if(document.documentElement.scrollTop<=item.offsetTop-400){
-            item.classList.remove("no-opacity");
-        }
+        /**
+         * 
+         else if(document.documentElement.scrollTop<=item.offsetTop-900){
+             item.classList.remove("no-opacity");
+            }
+        */
 
     })
 

@@ -1,5 +1,4 @@
 
-@import "css/colors";
 
 
 *{
@@ -13,24 +12,24 @@
 body{    
     font-family: 'Fredoka One', cursive;
     font-size: 2.5rem;
-    color: $color-white;
+    color: white;
     display: flex;
     flex-direction: column;
-
+    
     &.disable-text-selection{
         -ms-user-select:none;
         -moz-user-select:none;
         -webkit-user-select:none;
         -webkit-touch-callout: none;
         -khtml-user-select: none;
-         user-select:none;
-     }
-
-     &::-webkit-scrollbar {
+        user-select:none;
+    }
+    
+    &::-webkit-scrollbar {
         display: none;
-      }
-
+    }
 }
+@import "css/colors";
 
 .top-container, .middle-container, .bottom-container{
     padding: 5rem;

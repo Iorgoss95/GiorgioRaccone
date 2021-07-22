@@ -26,6 +26,11 @@
                 width: 50%;
             }
 
+            &__center{
+                width: 100%;
+                padding: 5rem 0;
+            }
+
         }
         
 
@@ -149,6 +154,10 @@
             font-size: 3vw;
         }
 
+        .line-height{
+            line-height: 6rem;
+        }
+        
 
         .section-card{
 
@@ -208,7 +217,7 @@
         }
 
         .line-height{
-            line-height: 3rem;
+            line-height: 3.5rem;
         }
 
         .contact-me{

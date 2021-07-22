@@ -1,3 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-size: .5vw;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility; }
+
+body {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column; }
+  body.disable-text-selection {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    user-select: none; }
+  body::-webkit-scrollbar {
+    display: none; }
+
 .theme-1 {
   --color-2: #fa5b4c;
   --color-1: #264c7d;
@@ -18,7 +41,7 @@
   --color-1: #99dad3;
   --color-2: #1e386b;
   --color-3: #22d268;
-  --color-4: #faccd4;
+  --color-4: #ffb2d1;
   --color-5: var(--color-2);
   --color-6: var(--color-4); }
 
@@ -45,29 +68,6 @@
   --color-4: #d5e3f4;
   --color-5: var(--color-2);
   --color-6: var(--color-3); }
-
-* {
-  box-sizing: border-box;
-  font-size: .5vw;
-  margin: 0;
-  padding: 0;
-  text-rendering: optimizeLegibility; }
-
-body {
-  font-family: 'Fredoka One', cursive;
-  font-size: 2.5rem;
-  color: #F9FEFB;
-  display: flex;
-  flex-direction: column; }
-  body.disable-text-selection {
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    user-select: none; }
-  body::-webkit-scrollbar {
-    display: none; }
 
 .top-container, .middle-container, .bottom-container {
   padding: 5rem;
@@ -132,7 +132,7 @@ body {
   height: 5rem; }
 
 .line-height {
-  line-height: 5rem; }
+  line-height: 7rem; }
 
 .align-center {
   text-align: center; }
@@ -456,6 +456,9 @@ button {
     width: 100%; }
     .section-card__title {
       width: 50%; }
+    .section-card__center {
+      width: 100%;
+      padding: 5rem 0; }
   .mini-cont {
     display: inline-block;
     padding-right: 7rem; }
@@ -522,6 +525,8 @@ button {
     font-size: 1.3vw; }
   .normal-size {
     font-size: 3vw; }
+  .line-height {
+    line-height: 6rem; }
   .section-card {
     text-align: center; }
     .section-card__title {
@@ -553,7 +558,7 @@ button {
   .normal-size {
     font-size: 4vw; }
   .line-height {
-    line-height: 3rem; }
+    line-height: 3.5rem; }
   .contact-me {
     font-size: 8.5vw; }
   .scrollbar {
