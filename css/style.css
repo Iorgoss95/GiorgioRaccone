@@ -96,12 +96,16 @@ body {
 .section-card {
   background: var(--color-6);
   color: var(--color-2);
-  padding: 5rem;
+  padding: 10rem;
   margin: 5rem 0;
   box-shadow: 0px 10px 20px 0px rgba(51, 16, 16, 0.2); }
   .section-card__title {
     padding: 0;
     align-self: center; }
+  .section-card__span {
+    padding: .7rem 1.5rem;
+    background-color: var(--color-2);
+    color: var(--color-3); }
 
 #section-card-center {
   display: block; }
