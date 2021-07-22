@@ -12,16 +12,6 @@ $color-black:black;
     --color-6: var(--color-3);
 }
 
-//watermelon 
-.theme-3{
-    --color-1: #EA101C;
-    --color-2: #B4F8C8;
-    --color-3: #1ed760;
-    --color-4: #AE0900;
-    --color-5: var(--color-2);
-    --color-6: var(--color-3);
-}
-
 //spotify
 .theme-2{
     --color-1: #99dad3;
@@ -32,6 +22,16 @@ $color-black:black;
     --color-6: var(--color-4);
     //#2b47bc, #edf8f6, #ffb2d1, #faccd4;
 }
+//watermelon 
+.theme-3{
+    --color-1: #EA101C;
+    --color-2: #B4F8C8;
+    --color-3: #1ed760;
+    --color-4: #AE0900;
+    --color-5: var(--color-2);
+    --color-6: var(--color-3);
+}
+
 
 .theme-4{
     --color-1: #A16AE8;

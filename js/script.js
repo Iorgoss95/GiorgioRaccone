@@ -5,7 +5,7 @@
 let color = window.getComputedStyle(document.querySelector(".top-container")).backgroundColor;
 document.querySelector("meta[name='theme-color']").setAttribute("content", color);
 
-const btn = document.querySelectorAll(".btn-toggle_2");
+const btn = document.querySelectorAll(".btn-toggle");
 let i = 2;
 
 function clickButton() {
@@ -86,15 +86,14 @@ const element = document.querySelectorAll(".opacity");
 window.onscroll = function(){
     element.forEach(item => {
        
-        if(document.documentElement.scrollTop>=item.offsetTop -900){
+        if(document.documentElement.scrollTop>=item.offsetTop -800){
             item.classList.add("no-opacity");
         }
-        /**
-         * 
+        
          else if(document.documentElement.scrollTop<=item.offsetTop-900){
              item.classList.remove("no-opacity");
             }
-        */
+        
 
     })
 
