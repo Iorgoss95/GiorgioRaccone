@@ -333,7 +333,7 @@ body {
   transition: all .2s;
   padding: 0.3rem 2rem;
   border-radius: 2.3rem;
-  background-color: var(--color-4);
+  background-color: var(--color-5);
   position: absolute; }
   .btn__text {
     align-self: center; }
