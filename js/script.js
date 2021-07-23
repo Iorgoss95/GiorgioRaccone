@@ -89,10 +89,11 @@ window.onscroll = function(){
         if(document.documentElement.scrollTop>=item.offsetTop -800){
             item.classList.add("no-opacity");
         }
-        
-         else if(document.documentElement.scrollTop<=item.offsetTop-900){
-             item.classList.remove("no-opacity");
-            }
+        /*
+        else if(document.documentElement.scrollTop<=item.offsetTop-900){
+            item.classList.remove("no-opacity");
+        }
+        */
         
 
     })

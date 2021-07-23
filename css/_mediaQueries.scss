@@ -38,6 +38,7 @@
         display: inline-block;
         padding-right: 7rem;
     }
+
     .main-title{
         &__size__big{
             font-size: 13vw;
@@ -104,7 +105,6 @@
 
         .section-card{
 
-            text-align: center;
             &__title{
                 font-size: 7vw;
                 padding: 3vh 0;
@@ -161,10 +161,10 @@
 
         .section-card{
 
-            text-align: center;
+            padding: 5rem;
             &__title{
                 font-size: 8vw;
-                padding: 3vh 0;
+                padding: 2.5vh 0;
             }
         }
     
@@ -211,6 +211,10 @@
     * {
         font-size: 2vw;
     }
+
+    .middle-container{
+        padding: 0;
+    }
        
     .normal-size{
             font-size: 4vw;
@@ -241,10 +245,11 @@
     }
 
         .section-card{
-            text-align: center;
+
+            padding: 8vw;
             &__title{
                 font-size: 9vw;
-                padding: 3vh 0;
+                padding: 2vh 0;
             }
         }
 

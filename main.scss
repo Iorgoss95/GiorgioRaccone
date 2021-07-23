@@ -68,52 +68,14 @@ body{
 //   OTHER CLASSES----------------------
 
 
-.section-card{
 
-    background: var(--color-6);
-    color: var(--color-2);
-    padding: 10rem;
-    margin: 5rem 0;
-    box-shadow: 0px 10px 20px 0px rgba(51, 16, 16, 0.2);
-    
-    &__title{
-        padding: 0;
-        align-self: center;
-    }
-
-    &__span{
-        padding: .7rem 1.5rem;
-        background-color: var(--color-2);
-        color: var(--color-6);
-    }
-}
-
-#section-card-center{
-    display: block;
-}
-
-
-.row-reverse{
-    order: 2;
-}
-
-
-.opacity{
-    opacity: 0;
-    animation: moveDownRev 1s;
-    
-}
-
-.no-opacity{
-    opacity: 1;
-    animation: moveUp 1s;
-}
 
 
 
 @import "css/utility";
 @import "css/animations";
 @import "css/bouncing-letter";
+@import "css/section-card";
 @import "css/foo_wrapper";
 @import "css/photo";
 @import "css/button";

@@ -33,3 +33,18 @@
     font-size: inherit;
 }
 
+.row-reverse{
+    order: 2;
+}
+
+
+.opacity{
+    opacity: 0;
+    animation: moveDownRev 1s;
+    
+}
+
+.no-opacity{
+    opacity: 1;
+    animation: moveUp 1s;
+}
