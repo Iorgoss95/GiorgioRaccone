@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <meta name="theme-color" content="44444">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +24,13 @@
     <!----TOP CONTAINER------------------------->
     <div class="top-container ">
         <!---lANGUAGE BUTTON    -->
-    <div class="btn moveSx">
-            <a class="btn__link" href="ITA_page/index.html">
-                <span class="btn__text normal-size uppercase align-center">It</span>
-                <img class="btn__img" src="img/flag_ita_flat.png" alt="">
+    <div class="btn btn__language moveSx">
+        <div class="btn__box">
+            <a class="btn__link" href="../index.html">
+                <span class="btn__text normal-size uppercase align-center">Uk</span>
+                <img class="btn__img" src="../img/flag_uk_flat.png" alt="">
             </a>
+        </div>
     </div>
 
         <div class="main-title ">
@@ -36,11 +38,16 @@
             <div class="big-size zoom-letter cont moveDown ">
                 <div class="mini-cont ">
 
-                    <div class="zoom-letter__letter main-title__size__big bounce">H</div>
+                    <div class="zoom-letter__letter main-title__size__big bounce">C</div>
                     <div class="zoom-letter__letter main-title__size__big bounce">i</div>
+                    <div class="zoom-letter__letter main-title__size__big bounce">a</div>
+                    <div class="zoom-letter__letter main-title__size__big bounce">o</div>
                     <div class="zoom-letter__letter main-title__size">&nbsp</div>
-                    <div class="zoom-letter__letter main-title__size__big bounce">I'</div>
-                    <div class="zoom-letter__letter main-title__size__big bounce">m</div>
+                    <div class="zoom-letter__letter main-title__size__big bounce">s</div>
+                    <div class="zoom-letter__letter main-title__size__big bounce">o</div>
+                    <div class="zoom-letter__letter main-title__size__big bounce">n</div>
+                    <div class="zoom-letter__letter main-title__size__big bounce">o</div>
+
                 </div>
                 <div class="mini-cont ">
                     <div class="zoom-letter__letter main-title__size__big bounce">G</div>
@@ -55,11 +62,6 @@
             <div class="big-size zoom-letter  cont moveDown s-delay">
                 <div class="mini-cont ">
 
-                    <div class="zoom-letter__letter main-title__size bounce">I'</div>
-                    <div class="zoom-letter__letter main-title__size bounce">m</div>
-                    <div class="zoom-letter__letter main-title__size bounce">&nbsp</div>
-                    <div class="zoom-letter__letter main-title__size bounce">a</div>
-                    <div class="zoom-letter__letter main-title__size bounce">&nbsp</div>
                     <div class="zoom-letter__letter main-title__size bounce">j</div>
                     <div class="zoom-letter__letter main-title__size bounce">u</div>
                     <div class="zoom-letter__letter main-title__size bounce">n</div>
@@ -93,7 +95,7 @@
                 <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>
                 </span>
-                <span class="button-text">Toggle colors</span>
+                <span class="button-text">Cambia colori</span>
             </button>
 
         </div>
@@ -103,8 +105,8 @@
 
         <div class="photo moveUp l-delay">
             <figure class="photo__shape">
-                <img src="img/photo1-01_small.jpg" alt="Giorgio" class="photo__img">
-                <figcaption class="photo__caption">It's Me!</figcaption>
+                <img src="../img/photo1-01_small.jpg" alt="Giorgio" class="photo__img">
+                <figcaption class="photo__caption">Me!</figcaption>
             </figure>
         </div>
         <div class="small-divider"></div>
@@ -119,36 +121,38 @@
         <div class="section-card line-height opacity align-center" id="section-card-center">
             <div class="section-card__title section-card__center big-size uppercase align-center " >
                 <div class="mini-cont font-inherit ">
-                    <div class="zoom-letter__letter font-inherit rotate exp_fix section-card__span">W</div>
+                    <div class="zoom-letter__letter font-inherit rotate exp_fix section-card__span">B</div>
                     <div class="zoom-letter__letter font-inherit rotate exp_fix">e</div>
-                    <div class="zoom-letter__letter font-inherit rotate exp_fix">l</div>
-                    <div class="zoom-letter__letter font-inherit rotate exp_fix">l</div>
-                    <div class="zoom-letter__letter font-inherit rotate exp_fix">c</div>
+                    <div class="zoom-letter__letter font-inherit rotate exp_fix">n</div>
+                    <div class="zoom-letter__letter font-inherit rotate exp_fix">v</div>
+                    <div class="zoom-letter__letter font-inherit rotate exp_fix">e</div>
+                    <div class="zoom-letter__letter font-inherit rotate exp_fix">n</div>
+                    <div class="zoom-letter__letter font-inherit rotate exp_fix">u</div>
+                    <div class="zoom-letter__letter font-inherit rotate exp_fix">t</div>
                     <div class="zoom-letter__letter font-inherit rotate exp_fix">o</div>
-                    <div class="zoom-letter__letter font-inherit rotate exp_fix">m</div>
-                    <div class="zoom-letter__letter font-inherit rotate exp_fix">e</div>
+
 
                 </div>
             </div>
             <div class="section-card__title section-card__center big-size uppercase ">
                 <section>
                     <p class="normal-size">
-                        I'm 26 and am an Electrical and Computer Engineer, with more focus on the former, but I decide
-                        to be a
-                        frontend developer, or fullstack if the job requires it. <br>
+                        Ho 26 anni e sono un ingegnere elettrico e informatico, con più attenzione al primo, ma ho deciso
+                        essere uno
+                        sviluppatore frontend, o fullstack se il lavoro lo richiede. <br>
                     </p>
                     <p class="normal-size">
-                        This site is completely designed by me. <br>
-                        I made it fully responsive using flexbox, grid and media queries.<br>
-                        Try to change browser size and see what happens!<br>
-                        I also made a custom scrollbar/indicator that increase it's size in relationn of the percentage
-                        of the
-                        scrolled page.
-                        I used a little bit of javascript to achieve this.<br>
-                        As you see, another use of JS is to change theme color of the entire site! Try again and pick
-                        your
-                        favorite! <br>
-                        I put in hover, scroll and some other CSS effects to show off what I can do.
+                        Questo sito è completamente progettato da me. <br>
+                        L'ho reso completamente reattivo usando flexbox, grid e media queries.
+                        Provate a cambiare le dimensioni del browser e vedete cosa succede!
+                        Ho anche fatto una barra di scorrimento/indicatore personalizzato che aumenta la sua dimensione in relazione alla percentuale
+                        della
+                        pagina scrollata.
+                        Ho usato un po' di javascript per ottenere questo risultato.
+                        Come vedi, un altro uso di JS è quello di cambiare il colore del tema dell'intero sito! Prova di nuovo e scegli
+                        il tuo
+                        preferito! <br>
+                        Ho inserito hover, scroll e qualche altro effetto CSS per mostrare quello che mi piace fare.
 
                     </p>
                 </section>
@@ -162,16 +166,16 @@
             <div class="section-card__title big-size uppercase align-center ">
                 <div class="mini-cont font-inherit ">
                     <div class="zoom-letter__letter font-inherit rotate exp_fix section-card__span">E</div>
-                    <div class="zoom-letter__letter font-inherit rotate exp_fix">x</div>
+                    <div class="zoom-letter__letter font-inherit rotate exp_fix">s</div>
                     <div class="zoom-letter__letter font-inherit rotate exp_fix">p</div>
                     <div class="zoom-letter__letter font-inherit rotate exp_fix">e</div>
                     <div class="zoom-letter__letter font-inherit rotate exp_fix">r</div>
                     <div class="zoom-letter__letter font-inherit rotate exp_fix">i</div>
                     <div class="zoom-letter__letter font-inherit rotate exp_fix">e</div>
                     <div class="zoom-letter__letter font-inherit rotate exp_fix">n</div>
-                    <div class="zoom-letter__letter font-inherit rotate exp_fix">c</div>
+                    <div class="zoom-letter__letter font-inherit rotate exp_fix">z</div>
                     <div class="zoom-letter__letter font-inherit rotate exp_fix">e</div>
-                    <div class="zoom-letter__letter font-inherit rotate exp_fix">s</div>
+
 
                 </div>
             </div>
@@ -180,30 +184,29 @@
 
                     <section class="normal-size">
                         <span class="normal-size section-card__span">
-                            Dicember 2019 >> October 2020
+                            Dicembre 2019 >> Ottobre 2020
                         </span>
                         <p class="normal-size">
-
-                            I started with a ten-month internship at Accenture Technology in Milan.
-                            during my work experience at Accenture, I learned how to work with high-level programming
-                            languages and
-                            Databases, all within the context of a team, where I learned how to meet deadlines and interface
-                            with
-                            external clients.
+                            Ho iniziato con uno stage di dieci mesi presso Accenture Technology a Milano.
+                            Durante la mia esperienza di lavoro in Accenture, ho imparato a lavorare con linguaggi di programmazione di alto livello
+                            linguaggi di programmazione e
+                            database, il tutto nel contesto di un team, dove ho imparato a rispettare le scadenze e a interfacciarmi
+                            con
+                            clienti esterni.
                             <br>
-                            I was an RPA developer, using BluePrism to develop automation processes for banking customers.
+                            Sono stato uno sviluppatore RPA, utilizzando BluePrism per sviluppare processi di automazione per clienti bancari.
+
                         </p>
                     </section>
 
                     <p>&nbsp;</p>
                     <p class="normal-size">
                         <span class="normal-size section-card__span">
-                            March 2021 >> Today 
+                            Marzo 2021 >> Presente 
                         </span>
                         <p class="normal-size">
-
-                            Junior frontend developer at FinconsGroup, working for RCS Mediagroup, the main publisher in
-                            Milan.
+                            Junior frontend developer presso FinconsGroup, lavorando per RCS Mediagroup, il principale editore di
+                            Milano.
                         </p>
                     </p>
                 </section>
@@ -247,9 +250,8 @@
                     <div class="zoom-letter__letter font-inherit rotate">o</div>
                     <div class="zoom-letter__letter font-inherit rotate">b</div>
                     <div class="zoom-letter__letter font-inherit rotate">b</div>
-                    <div class="zoom-letter__letter font-inherit rotate">i</div>
-                    <div class="zoom-letter__letter font-inherit rotate">e</div>
-                    <div class="zoom-letter__letter font-inherit rotate">s</div>
+                    <div class="zoom-letter__letter font-inherit rotate">y</div>
+
 
                 </div>
             </div>
@@ -270,7 +272,7 @@
 
         <div class="section-card opacity" id="section-card-center">
             <p class="normal-size align-center">
-                Have a question or want to work together? See below
+                Hai un domande o vuoi lavorare con me? Vedi sotto
             </p>
         </div>
 
@@ -288,11 +290,11 @@
             <div class="zoom-letter__letter contact-me__size rotate">n</div>
             <div class="zoom-letter__letter contact-me__size rotate">t</div>
             <div class="zoom-letter__letter contact-me__size rotate">a</div>
-            <div class="zoom-letter__letter contact-me__size rotate">c</div>
             <div class="zoom-letter__letter contact-me__size rotate">t</div>
-            <div class="zoom-letter__letter contact-me__size rotate">&nbsp</div>
+            <div class="zoom-letter__letter contact-me__size rotate">t</div>
+            <div class="zoom-letter__letter contact-me__size rotate">a</div>
             <div class="zoom-letter__letter contact-me__size rotate">m</div>
-            <div class="zoom-letter__letter contact-me__size rotate">e</div>
+            <div class="zoom-letter__letter contact-me__size rotate">i</div>
             <div class="zoom-letter__letter contact-me__size rotate">!</div>
             </p>
             <div class="small-divider"></div>
@@ -327,7 +329,7 @@
             </section>
             <div class="small-divider"></div>
             <section class="foo-card">
-                <p class="normal-size">Phone:</p>
+                <p class="normal-size">Cell:</p>
                 <p>
                     <a class="normal-size cool-link" target="_blank" href="tel:3299865024">+39 3299865024</a>
                 </p>
@@ -339,7 +341,7 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 

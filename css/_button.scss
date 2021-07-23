@@ -1,19 +1,13 @@
 
-
-.btn-container{
-    display: flex;
-    flex-direction: column;
-}
-
-
 .btn{
-    
     font-size: .5em;
     align-self: flex-end;
     border-radius: 2.3rem;
     cursor: pointer;
     transition: all .2s;
-    display: flex;
+    padding: 2rem;
+    border-radius: 2.3rem;
+    background-color: var(--color-3);
 
     &__text{
       align-self: center;
@@ -25,27 +19,20 @@
       height: 4.5rem;
       margin: 1rem;
     }
-    
-    &__ita, &__eng{
-      margin-right: 2rem;
-      padding: 2rem 2rem;
-      border-radius: 2.3rem;
-      
 
-      &:hover {
-        box-shadow: 0 1.4rem 2rem rgba(black,.3);
-        transition: all .2s;
-        transform: translateY(-0.5rem);
-        background-color: var(--color-3);
-        color: var(--color-2);
-        border-radius: 2.3rem;
-
-      }
-      &:active,
-      &:focus {
-        box-shadow: 0 .5rem 1rem rgba(black,0);
-      }
+    &__link{
+      text-decoration: none;
+      color: var(--color-2);
+      display: flex;
     }
+    
+    &:hover {
+      transition: all .2s;
+      transform: translateY(-0.4rem);
+
+    }
+   
+    
 }
 
 
