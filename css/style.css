@@ -73,7 +73,8 @@ body {
   padding: 5rem;
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .top-container {
   background-color: var(--color-1);
@@ -330,19 +331,20 @@ body {
   border-radius: 2.3rem;
   cursor: pointer;
   transition: all .2s;
-  padding: 2rem;
+  padding: 0.3rem 2rem;
   border-radius: 2.3rem;
-  background-color: var(--color-3); }
+  background-color: var(--color-4);
+  position: absolute; }
   .btn__text {
     align-self: center; }
   .btn__img {
     align-self: center;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3rem;
+    height: 3rem;
     margin: 1rem; }
   .btn__link {
     text-decoration: none;
-    color: var(--color-2);
+    color: var(--color-1);
     display: flex; }
   .btn:hover {
     transition: all .2s;
@@ -450,11 +452,11 @@ button {
   * {
     font-size: .4vw; }
   .normal-size {
-    font-size: 1.4vw; }
+    font-size: 1.2vw; }
   .big-size {
-    font-size: 3.4vw; }
+    font-size: 3vw; }
   .copy2021 {
-    font-size: 1.6vh; }
+    font-size: 1.5vh; }
   .section-card {
     display: flex;
     flex-direction: row;
@@ -468,10 +470,10 @@ button {
     display: inline-block;
     padding-right: 7rem; }
   .main-title__size__big {
-    font-size: 13vw;
+    font-size: 12vw;
     margin: 0 -0.8rem; }
   .main-title__size {
-    font-size: 7.6vw;
+    font-size: 7vw;
     margin: 0 -0.5rem; } }
 
 @media only screen and (min-width: 1000px) and (max-width: 1250px) {
@@ -506,7 +508,7 @@ button {
       font-size: 7vw;
       padding: 3vh 0; }
   .main-title__size__big {
-    font-size: 15vw;
+    font-size: 14vw;
     margin: 0; }
   .main-title__size {
     font-size: 9vw;
@@ -559,7 +561,10 @@ button {
   * {
     font-size: 2vw; }
   .middle-container {
-    padding: 0; }
+    padding: 0;
+    padding-top: 5rem; }
+  .top-container {
+    padding: 8vw; }
   .normal-size {
     font-size: 4vw; }
   .line-height {

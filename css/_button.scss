@@ -5,9 +5,11 @@
     border-radius: 2.3rem;
     cursor: pointer;
     transition: all .2s;
-    padding: 2rem;
+    padding: 0.3rem 2rem ;
     border-radius: 2.3rem;
-    background-color: var(--color-3);
+    background-color: var(--color-4);
+
+    position: absolute;
 
     &__text{
       align-self: center;
@@ -15,14 +17,14 @@
     }
     &__img{
       align-self:center;
-      width: 4.5rem;
-      height: 4.5rem;
+      width: 3rem;
+      height: 3rem;
       margin: 1rem;
     }
 
     &__link{
       text-decoration: none;
-      color: var(--color-2);
+      color: var(--color-1);
       display: flex;
     }
     
