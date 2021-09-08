@@ -24,11 +24,11 @@
 
             &__title{
                 width: 50%;
+                padding: 0 .5vw;
             }
 
             &__center{
                 width: 100%;
-                padding: 5rem 0;
             }
 
         }
@@ -63,11 +63,9 @@
             font-size: 4.5vw;
         }
         .section-card{
-
-            
             &__title{
                 font-size: 6.5vw;
-                padding: 3vh 0;
+                padding: 0 1vw;
             }
         }
         .copy2021{
@@ -107,7 +105,8 @@
 
             &__title{
                 font-size: 7vw;
-                padding: 3vh 0;
+                padding: 0 1vw;
+                
             }
         }
     }
@@ -160,11 +159,11 @@
         
 
         .section-card{
-
             padding: 5rem;
             &__title{
                 font-size: 8vw;
-                padding: 2.5vh 0;
+                padding: 0 1vw;
+                margin-top: 5rem;
             }
         }
     
@@ -253,7 +252,8 @@
             padding: 8vw;
             &__title{
                 font-size: 9vw;
-                padding: 2vh 0;
+                padding: 0 1vw;
+                margin-top: 5rem;
             }
         }
 
