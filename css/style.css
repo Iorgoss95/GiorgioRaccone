@@ -54,6 +54,14 @@ body {
   --color-6: var(--color-3); }
 
 .theme-5 {
+  --color-1: #43a512;
+  --color-2: #bbda00;
+  --color-3: #1ed760;
+  --color-4: #1ed760;
+  --color-5: var(--color-3);
+  --color-6: var(--color-4); }
+
+.theme-7 {
   --color-1: #04B16F;
   --color-2: #A3EBB1;
   --color-3: #21B6A8;
@@ -331,7 +339,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
-    color: #F9FEFB;
+    color: #fdfdfd;
     font-size: 3.5rem;
     text-align: center;
     opacity: 0;
