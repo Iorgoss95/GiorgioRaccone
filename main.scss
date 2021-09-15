@@ -1,6 +1,4 @@
 
-
-
 *{
     box-sizing: border-box;
     font-size: .5vw;
@@ -41,8 +39,7 @@ body{
 
 .top-container{
     background-color: var(--color-1);
-    color: var(--color-5);
-    
+    color: var(--color-4);
     display: flex;
     flex-direction: column;
     
@@ -50,14 +47,14 @@ body{
 
 .middle-container{
     background-color: var(--color-2);
-    color: var(--color-6);
+    color: var(--color-7);
     display: flex;
    
 }
 
 .bottom-container{
     background-color: var(--color-3);
-    color: var(--color-2);
+    color: var(--color-8);
     
     a{
         color: inherit;

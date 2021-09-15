@@ -21,61 +21,118 @@ body {
   body::-webkit-scrollbar {
     display: none; }
 
+/*
+color 1 head background
+color 2 middle abckground
+color 3 footer background
+color 4 title 
+color 42 button back
+color 43 button text
+color 5 section background
+color 6 section title
+color 62 section span back
+color 7 section text
+color 8 footer text
+color 9 scrollbar
+
+*/
 .theme-1 {
-  --color-2: #fa5b4c;
-  --color-1: #264c7d;
-  --color-3: #fcad44;
-  --color-4: #d5e3f4;
-  --color-5: #d5e3f4;
-  --color-6: var(--color-3); }
+  --color-1: #0c3139;
+  --color-2: #ffffff;
+  --color-3: #35283c;
+  --color-4: #b6ff9b;
+  --color-42: #8bf863;
+  --color-43: #ffffff;
+  --color-5: #2e2e3a;
+  --color-62: #ffa9ab;
+  --color-6: #3e1921;
+  --color-7: #72e5ce;
+  --color-8: #fec2eb;
+  --color-9: #72e5ce; }
 
 .theme-2 {
-  --color-1: #99dad3;
-  --color-2: #1e386b;
-  --color-3: #22d268;
-  --color-4: #ffd5e6;
-  --color-5: var(--color-2);
-  --color-6: var(--color-4); }
+  --color-1: #0c3139;
+  --color-2: #2e2e3a;
+  --color-3: #35283c;
+  --color-4: #b6ff9b;
+  --color-42: #82eb5c;
+  --color-43: #ffffff;
+  --color-5: #ffffff;
+  --color-6: #72e5ce;
+  --color-62: #ffffff;
+  --color-7: #72e5ce;
+  --color-8: #fec2eb;
+  --color-9: #72e5ce; }
 
 .theme-3 {
   --color-1: #EA101C;
   --color-2: #B4F8C8;
   --color-3: #1ed760;
   --color-4: #AE0900;
+  --color-42: violet;
+  --color-43: rgb(118, 214, 139);
   --color-5: var(--color-2);
-  --color-6: var(--color-3); }
+  --color-6: var(--color-3);
+  --color-62: rgb(78, 250, 87);
+  --color-7: purple;
+  --color-8: lightblue;
+  --color-9: orange; }
 
 .theme-4 {
   --color-1: #A16AE8;
   --color-2: #B4FEE7;
   --color-3: #FD49A0;
   --color-4: #f6ff46;
+  --color-42: violet;
+  --color-43: rgb(118, 214, 139);
   --color-5: var(--color-2);
-  --color-6: var(--color-3); }
+  --color-6: var(--color-3);
+  --color-62: rgb(78, 250, 87);
+  --color-7: purple;
+  --color-8: lightblue;
+  --color-9: orange; }
 
 .theme-5 {
-  --color-1: #43a512;
-  --color-2: #bbda00;
-  --color-3: #1ed760;
-  --color-4: #1ed760;
-  --color-5: var(--color-3);
-  --color-6: var(--color-4); }
+  --color-1: #0c3139;
+  --color-2: #1ed760;
+  --color-3: #b6ff9b;
+  --color-4: #0c3139;
+  --color-42: violet;
+  --color-43: rgb(118, 214, 139);
+  --color-5: 
+    --color-6 ;
+  --color-62: rgb(78, 250, 87);
+  --color-7: purple;
+  --color-8: lightblue;
+  --color-9: orange; }
 
 .theme-7 {
   --color-1: #04B16F;
   --color-2: #A3EBB1;
   --color-3: #21B6A8;
   --color-4: #ff4b4b;
+  --color-42: violet;
+  --color-43: rgb(118, 214, 139);
   --color-5: var(--color-2);
-  --color-6: var(--color-3); }
+  --color-6: var(--color-3);
+  --color-62: rgb(78, 250, 87);
+  --color-7: purple;
+  --color-8: lightblue;
+  --color-9: orange; }
 
 .theme-6 {
   --color-1: #341948;
   --color-2: #9388A2;
   --color-3: #170B3B;
   --color-4: #d5e3f4;
+  --color-42: violet;
+  --color-43: rgb(118, 214, 139);
   --color-5: var(--color-2);
-  --color-6: var(--color-3); }
+  --color-6: var(--color-3);
+  --color-62: rgb(78, 250, 87);
+  --color-7: purple;
+  --color-8: lightblue;
+  --color-9: orange; }
 
 .top-container, .middle-container, .bottom-container {
   padding: 5rem;
@@ -86,18 +143,18 @@ body {
 
 .top-container {
   background-color: var(--color-1);
-  color: var(--color-5);
+  color: var(--color-4);
   display: flex;
   flex-direction: column; }
 
 .middle-container {
   background-color: var(--color-2);
-  color: var(--color-6);
+  color: var(--color-7);
   display: flex; }
 
 .bottom-container {
   background-color: var(--color-3);
-  color: var(--color-2); }
+  color: var(--color-8); }
   .bottom-container a {
     color: inherit;
     text-decoration: none; }
@@ -147,12 +204,12 @@ body {
   animation: moveUp 1s; }
 
 .highlight {
-  background-color: var(--color-5);
+  background-color: var(--color-4);
   color: var(--color-1);
   padding: 0 1.5vw; }
 
 .highlight-2 {
-  background-color: var(--color-2);
+  background-color: var(--color-62);
   color: var(--color-6);
   padding: 0 2vh;
   display: inline; }
@@ -286,8 +343,8 @@ body {
     display: inline-block; }
 
 .section-card {
-  background: var(--color-6);
-  color: var(--color-2);
+  background: var(--color-5);
+  color: var(--color-7);
   padding: 10rem;
   margin: 5rem 0;
   box-shadow: 0px 10px 20px 0px rgba(51, 16, 16, 0.2); }
@@ -296,7 +353,7 @@ body {
     align-self: center; }
   .section-card__span {
     padding: .7rem 1.5rem;
-    background-color: var(--color-2);
+    background-color: var(--color-62);
     color: var(--color-6); }
 
 #section-card-center {
@@ -312,7 +369,7 @@ body {
     display: block;
     width: 0;
     height: .5rem;
-    background: var(--color-2);
+    background: var(--color-8);
     transition: width .3s; }
   .foo-card .cool-link:hover::after {
     width: 100%; }
@@ -328,7 +385,7 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    border: var(--color-3) 0.75rem solid; }
+    border: var(--color-4) 0.75rem solid; }
   .photo__img {
     height: 100%;
     transform: translateX(1.3rem) translateY(0.4rem) scale(1.8);
@@ -339,7 +396,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
-    color: #fdfdfd;
+    color: #ffffff;
     font-size: 3.5rem;
     text-align: center;
     opacity: 0;
@@ -353,7 +410,7 @@ body {
     filter: blur(2px) brightness(80%); }
   .photo:hover .photo__shape {
     transition: all .4s;
-    border: var(--color-3) 1.3rem solid; }
+    border: var(--color-4) 1.3rem solid; }
 
 .btn {
   font-size: .5em;
@@ -363,7 +420,7 @@ body {
   transition: all .2s;
   padding: 0.3rem 2rem;
   border-radius: 2.3rem;
-  background-color: var(--color-5);
+  background-color: var(--color-42);
   position: absolute; }
   .btn__text {
     align-self: center; }
@@ -374,7 +431,7 @@ body {
     margin: 1rem; }
   .btn__link {
     text-decoration: none;
-    color: var(--color-1);
+    color: var(--color-43);
     display: flex; }
   .btn:hover {
     transition: all .2s;
@@ -407,7 +464,7 @@ button {
       margin: 0;
       width: 8rem;
       height: 8rem;
-      background: var(--color-3);
+      background: var(--color-42);
       border-radius: 10rem; }
       button.button-text .circle .icon {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -430,8 +487,8 @@ button {
             right: 0.1rem;
             width: 1rem;
             height: 1rem;
-            border-top: 0.4rem solid var(--color-2);
-            border-right: 0.4rem solid var(--color-2);
+            border-top: 0.4rem solid var(--color-43);
+            border-right: 0.4rem solid var(--color-43);
             transform: rotate(45deg); }
     button.button-text .button-text {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -442,17 +499,17 @@ button {
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1.85rem;
-      color: var(--color-5);
+      color: var(--color-42);
       line-height: 1.6;
       text-align: center;
       font-size: 3rem; }
   button:hover .circle {
     width: 100%; }
     button:hover .circle .icon.arrow {
-      background: var(--color-2);
+      background: var(--color-43);
       transform: translate(3rem, 0); }
   button:hover .button-text {
-    color: var(--color-2); }
+    color: var(--color-43); }
 
 #scrollbar-wrapper {
   position: fixed;
@@ -468,7 +525,7 @@ button {
 .scrollbar {
   position: absolute;
   top: 0;
-  background-color: var(--color-4);
+  background-color: var(--color-9);
   right: 0;
   width: .8rem;
   height: 100vh;
@@ -553,7 +610,7 @@ button {
     opacity: 0; }
   button .button-text {
     transform: translateX(-1rem);
-    color: var(--color-2) !important; } }
+    color: var(--color-43) !important; } }
 
 @media only screen and (min-width: 450px) and (max-width: 750px) {
   * {
@@ -586,7 +643,7 @@ button {
     opacity: 0; }
   button .button-text {
     transform: translateX(-1rem);
-    color: var(--color-2) !important; } }
+    color: var(--color-43) !important; } }
 
 @media only screen and (max-width: 450px) {
   * {
@@ -628,4 +685,4 @@ button {
     opacity: 0; }
   button .button-text {
     transform: translateX(-1rem);
-    color: var(--color-2) !important; } }
+    color: var(--color-43) !important; } }

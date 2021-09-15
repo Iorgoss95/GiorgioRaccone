@@ -10,7 +10,7 @@
         position: relative;
         overflow: hidden;
         border-radius: 50%;
-        border: var(--color-3) .75rem solid;
+        border: var(--color-4) .75rem solid;
         
     }
     
@@ -51,7 +51,7 @@
 
     &:hover &__shape{
         transition: all .4s;
-        border: var(--color-3) 1.3rem solid;
+        border: var(--color-4) 1.3rem solid;
     }
 
     

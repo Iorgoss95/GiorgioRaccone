@@ -1,4 +1,4 @@
-
+//non usato
 .btn{
     font-size: .5em;
     align-self: flex-end;
@@ -7,7 +7,7 @@
     transition: all .2s;
     padding: 0.3rem 2rem ;
     border-radius: 2.3rem;
-    background-color: var(--color-5);
+    background-color: var(--color-42);
 
     position: absolute;
 
@@ -24,7 +24,7 @@
 
     &__link{
       text-decoration: none;
-      color: var(--color-1);
+      color: var(--color-43);
       display: flex;
     }
     
@@ -45,12 +45,9 @@
     cursor: pointer;
 }
 
-
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
   transition: $property $duration $ease;
 }
-
-
 
 button {
   position: relative;
@@ -74,7 +71,7 @@ button {
       margin: 0;
       width: 8rem;
       height: 8rem;
-      background: var(--color-3);
+      background: var(--color-42);
       border-radius: 10rem;
       
       .icon {
@@ -101,8 +98,8 @@ button {
             right: 0.1rem;
             width: 1rem;
             height: 1rem;
-            border-top: 0.4rem solid var(--color-2);
-            border-right: 0.4rem solid var(--color-2);
+            border-top: 0.4rem solid var(--color-43);
+            border-right: 0.4rem solid var(--color-43);
             transform: rotate(45deg);
           }
         }
@@ -117,7 +114,7 @@ button {
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1.85rem;
-      color: var(--color-5);
+      color: var(--color-42);
       line-height: 1.6;
       text-align: center;
       font-size: 3rem;
@@ -129,13 +126,13 @@ button {
       
       .icon {
         &.arrow {
-        background: var(--color-2);
+        background: var(--color-43);
         transform: translate(3rem, 0);
         }
       }
     }
     .button-text {
-      color: var(--color-2);
+      color: var(--color-43);
     }
   }
 }
