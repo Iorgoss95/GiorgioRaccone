@@ -41,12 +41,14 @@ color 9 scrollbar
   --color-2: #f5f5f5;
   --color-3: #35283c;
   --color-4: #b6ff9b;
-  --color-42: #86dd67;
+  --color-42: #1ed760;
   --color-43: #ffffff;
   --color-5: #2e2e3a;
-  --color-62: #ffa9ab;
   --color-6: #3e1921;
+  --color-62: #ffa9ab;
   --color-7: #72e5ce;
+  --color-6: #119941;
+  --color-62:#4efa57;
   --color-8: #fec2eb;
   --color-9: #72e5ce; }
 
@@ -57,41 +59,34 @@ color 9 scrollbar
   --color-4: #eb3c3f;
   --color-43: #EA101C;
   --color-42: #ffb44c;
-  --color-5: #c8deff;
-  --color-6: #1ed760;
-  --color-62:#4efa57;
-  --color-7: #eb3c3f;
+  --color-5: #fc6161;
+  --color-62: #3e1921;
+  --color-6: #ffa9ab;
+  --color-7: #ffd768;
   --color-8: #AE0900;
   --color-9: #4efa57; }
 
 .theme-3 {
-  --color-1: #715379;
-  --color-2: #ffffff;
-  --color-3: #21B6A8;
-  --color-4: #9eefe2;
-  --color-42: #4c9183;
-  --color-43: rgb(106, 250, 137);
-  --color-5:  #4c9183;
-  --color-6: #72e5ce;
-  --color-62: #715379;
-  --color-7: #ffffff;
+  --color-1: #13223a;
+  --color-2: #d0fcff;
+  --color-3: #2198b6;
+  --color-4: #589afc;
+  --color-42: #506aff;
+  --color-43: #172efd;
+  --color-43: #ffffff;
+  --color-5:  #193966;
+  --color-6: #2c4ba0;
+  --color-62: #43aae6;
+  --color-7: #dbcdff;
   --color-8: #ffffff;
-  --color-9: #72e5ce; }
+  --color-9: #11ffcf; }
 
-.theme-4 {
-  --color-1: #04B16F;
-  --color-2: #A3EBB1;
-  --color-3: #21B6A8;
-  --color-4: #775cf0;
-  --color-42: rgb(133, 231, 207);
-  --color-43: rgb(253, 251, 107);
-  --color-5: #ffffff;
-  --color-6: #ffffff;
-  --color-62: rgb(78, 250, 87);
-  --color-7: purple;
-  --color-8: #ffffff;
-  --color-9: orange; }
-
+/*
+#13223a
+#0170ff
+#12213a
+#ffa8ab
+*/
 .top-container, .middle-container, .bottom-container {
   padding: 0 5rem 5rem 5rem;
   display: flex;
@@ -450,14 +445,14 @@ button {
         button.button-text .circle .icon.arrow {
           transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
           left: 1.8rem;
-          top: .2rem;
+          top: .5rem;
           width: 2.8rem;
           height: .25rem;
           background: none; }
           button.button-text .circle .icon.arrow::before {
             position: absolute;
             content: '';
-            top: -0.6rem;
+            top: -0.5775rem;
             right: 0.1rem;
             width: 1rem;
             height: 1rem;
