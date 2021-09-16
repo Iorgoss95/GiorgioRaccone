@@ -77,7 +77,7 @@ color 9 scrollbar
   --color-5:  #193966;
   --color-6: #2c4ba0;
   --color-62: #43aae6;
-  --color-7: #dbcdff;
+  --color-7: #ffa8ab;
   --color-8: #ffffff;
   --color-9: #11ffcf; }
 
@@ -423,10 +423,10 @@ button {
   padding: 0;
   font-size: inherit;
   font-family: inherit; }
-  button.button-text {
+  button.button-container {
     width: 38rem;
     height: auto; }
-    button.button-text .circle {
+    button.button-container .circle {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: relative;
       display: block;
@@ -435,21 +435,21 @@ button {
       height: 8rem;
       background: var(--color-42);
       border-radius: 10rem; }
-      button.button-text .circle .icon {
+      button.button-container .circle .icon {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
         top: 0;
         bottom: 0;
         left: 7rem;
         margin: auto; }
-        button.button-text .circle .icon.arrow {
+        button.button-container .circle .icon.arrow {
           transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
           left: 1.8rem;
           top: .5rem;
           width: 2.8rem;
           height: .25rem;
           background: none; }
-          button.button-text .circle .icon.arrow::before {
+          button.button-container .circle .icon.arrow::before {
             position: absolute;
             content: '';
             top: -0.5775rem;
@@ -459,7 +459,7 @@ button {
             border-top: 0.4rem solid var(--color-43);
             border-right: 0.4rem solid var(--color-43);
             transform: rotate(45deg); }
-    button.button-text .button-text {
+    button.button-container .button-container {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
       top: .8rem;
@@ -477,7 +477,7 @@ button {
     button:hover .circle .icon.arrow {
       background: var(--color-43);
       transform: translate(3rem, 0); }
-  button:hover .button-text {
+  button:hover .button-container {
     color: var(--color-43); }
 
 .btn_download {
@@ -590,7 +590,7 @@ button {
     transform: translateX(-20rem); }
   button .icon::before {
     opacity: 0; }
-  button .button-text {
+  button .button-container {
     transform: translateX(-1rem);
     color: var(--color-43) !important; } }
 
@@ -623,7 +623,7 @@ button {
     transform: translateX(-20rem); }
   button .icon::before {
     opacity: 0; }
-  button .button-text {
+  button .button-container {
     transform: translateX(-1rem);
     color: var(--color-43) !important; } }
 
@@ -658,13 +658,21 @@ button {
   .exp_fix {
     margin: 0 -4.5px; }
   button .circle {
-    width: 100% !important;
-    border-radius: 10rem !important; }
+    opacity: 0; }
   button .icon.arrow {
     opacity: 0;
     transform: translateX(-20rem); }
   button .icon::before {
     opacity: 0; }
-  button .button-text {
-    transform: translateX(-1rem);
-    color: var(--color-43) !important; } }
+  button .button-container {
+    background-color: var(--color-42);
+    border-radius: 100px;
+    color: var(--color-43) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26rem !important;
+    margin: auto !important; }
+    button .button-container__text {
+      padding: 1px 3rem !important;
+      color: var(--color-43) !important; } }
