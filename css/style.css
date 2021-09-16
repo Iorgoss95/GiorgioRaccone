@@ -485,6 +485,25 @@ button {
   button:hover .button-text {
     color: var(--color-43); }
 
+.btn_download {
+  display: flex;
+  justify-content: center; }
+  .btn_download__icon {
+    width: 6.5rem;
+    height: 6.5rem; }
+  .btn_download__span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-8);
+    color: var(--color-3);
+    border-radius: 100px;
+    padding: 1rem; }
+    .btn_download__span p {
+      margin: 0 2rem; }
+    .btn_download__span:hover {
+      background-color: var(--color-2); }
+
 #scrollbar-wrapper {
   position: fixed;
   top: 0;

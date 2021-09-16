@@ -31,3 +31,27 @@ Chili Pepper
 
 #4efa57
 #1ed760
+
+//button download VERSION 1
+.btn_download{
+  display: flex;
+  justify-content: center;
+  
+  &__icon{
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  
+  &__span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      width: 30vw;
+      height: 5vh;
+
+      p{
+         margin-left: 2rem;
+      }
+  }
+}

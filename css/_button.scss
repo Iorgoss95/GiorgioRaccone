@@ -137,3 +137,34 @@ button {
   }
 }
 
+//button download
+.btn_download{
+  display: flex;
+  justify-content: center;
+  
+  
+  &__icon{
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  
+  &__span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-8);
+    color: var(--color-3);
+    border-radius: 100px;
+    padding: 1rem;
+
+      p{
+         margin:0 2rem;
+      }
+
+      &:hover{
+        background-color: var(--color-2);
+      }
+  }
+}
+
