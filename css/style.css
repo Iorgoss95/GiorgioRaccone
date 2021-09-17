@@ -561,7 +561,7 @@ button {
     font-size: 7vw;
     margin: 0 -0.5rem; } }
 
-@media only screen and (min-width: 1000px) and (max-width: 1250px) {
+@media only screen and (min-width: 1025px) and (max-width: 1250px) {
   * {
     font-size: .7vw; }
   .normal-size {
@@ -579,7 +579,7 @@ button {
     font-size: 12vw;
     margin: 0 -0.2rem; } }
 
-@media only screen and (min-width: 750px) and (max-width: 999px) {
+@media only screen and (min-width: 750px) and (max-width: 1024px) {
   * {
     font-size: .9vw; }
     * .normal-size {
@@ -605,7 +605,8 @@ button {
     opacity: 0; }
   button .button-container {
     transform: translateX(-1rem);
-    color: var(--color-43) !important; } }
+    color: var(--color-43) !important;
+    left: 4rem !important; } }
 
 @media only screen and (min-width: 450px) and (max-width: 750px) {
   * {
@@ -638,7 +639,8 @@ button {
     opacity: 0; }
   button .button-container {
     transform: translateX(-1rem);
-    color: var(--color-43) !important; } }
+    color: var(--color-43) !important;
+    left: 3rem !important; } }
 
 @media only screen and (max-width: 450px) {
   * {
@@ -671,6 +673,10 @@ button {
     margin: 0 -4.5px; }
   button .circle {
     opacity: 0; }
+  button .btn_toggle_icon {
+    z-index: 5;
+    top: -3.5rem !important;
+    left: -11rem !important; }
   button .icon.arrow {
     opacity: 0;
     transform: translateX(-20rem); }
@@ -681,10 +687,12 @@ button {
     border-radius: 100px;
     color: var(--color-43) !important;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    width: 26rem !important;
+    width: 30rem !important;
+    height: 8rem !important;
     margin: auto !important; }
     button .button-container__text {
+      font-size: 2.5rem !important;
       padding: 1px 3rem !important;
       color: var(--color-43) !important; } }
