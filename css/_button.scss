@@ -64,6 +64,15 @@ button {
   &.button-container {
     width: 38rem;
     height: auto;
+
+    .btn_toggle_icon{
+      position: relative;
+      top: -7.1rem;
+      left: -15rem;
+      color: var(--color-43);
+      width: 6.3rem;
+      height: 6.3rem;
+    }
     .circle {
       @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
       position: relative;
@@ -136,6 +145,7 @@ button {
     }
   }
 }
+
 
 //button download
 .btn_download{
