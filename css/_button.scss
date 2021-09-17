@@ -1,4 +1,4 @@
-//non usato
+//byn language
 .btn{
     font-size: .5em;
     align-self: flex-end;
@@ -6,8 +6,8 @@
     cursor: pointer;
     transition: all .2s;
     padding: 0.3rem 2rem ;
-    border-radius: 2.3rem;
-    background-color: var(--color-42);
+    border-radius: 100px;
+    background-color: var(--color-5);
 
     position: absolute;
 
@@ -24,7 +24,7 @@
 
     &__link{
       text-decoration: none;
-      color: var(--color-43);
+      color: #ffffff;
       display: flex;
     }
     

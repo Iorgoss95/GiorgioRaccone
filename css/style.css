@@ -43,10 +43,10 @@ color 9 scrollbar
   --color-4: #b6ff9b;
   --color-42: #1ed760;
   --color-43: #ffffff;
-  --color-5: #2e2e3a;
+  --color-5: #334f42;
   --color-6: #3e1921;
   --color-62: #ffa9ab;
-  --color-7: #72e5ce;
+  --color-7: #72e5ac;
   --color-6: #119941;
   --color-62:#4efa57;
   --color-8: #fec2eb;
@@ -70,6 +70,7 @@ color 9 scrollbar
   --color-1: #13223a;
   --color-2: #d0fcff;
   --color-3: #2198b6;
+  --color-3: #0170ff;
   --color-4: #589afc;
   --color-42: #506aff;
   --color-43: #172efd;
@@ -81,12 +82,6 @@ color 9 scrollbar
   --color-8: #ffffff;
   --color-9: #11ffcf; }
 
-/*
-#13223a
-#0170ff
-#12213a
-#ffa8ab
-*/
 .top-container, .middle-container, .bottom-container {
   padding: 0 5rem 5rem 5rem;
   display: flex;
@@ -105,7 +100,7 @@ color 9 scrollbar
   background-color: var(--color-2);
   color: var(--color-7);
   display: flex;
-  padding-top: 0; }
+  padding: 0 5rem; }
 
 .bottom-container {
   background-color: var(--color-3);
@@ -161,13 +156,16 @@ color 9 scrollbar
 .highlight {
   background-color: var(--color-4);
   color: var(--color-1);
-  padding: 0 10px; }
+  padding-right: 10px; }
 
 .highlight-2 {
   background-color: var(--color-62);
   color: var(--color-6);
   padding: 0 2vh;
   display: inline; }
+
+.mr-sx-5 {
+  margin-left: 5px; }
 
 @keyframes bouncing {
   0% {
@@ -388,8 +386,8 @@ color 9 scrollbar
   cursor: pointer;
   transition: all .2s;
   padding: 0.3rem 2rem;
-  border-radius: 2.3rem;
-  background-color: var(--color-42);
+  border-radius: 100px;
+  background-color: var(--color-5);
   position: absolute; }
   .btn__text {
     align-self: center; }
@@ -400,7 +398,7 @@ color 9 scrollbar
     margin: 1rem; }
   .btn__link {
     text-decoration: none;
-    color: var(--color-43);
+    color: #ffffff;
     display: flex; }
   .btn:hover {
     transition: all .2s;
