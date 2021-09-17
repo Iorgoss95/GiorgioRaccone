@@ -84,9 +84,10 @@ var parent=document.getElementById("parent-div");
 const element = document.querySelectorAll(".opacity");
 
 window.onscroll = function(){
+
     element.forEach(item => {
-       
-        if(document.documentElement.scrollTop>=item.offsetTop -800){
+        if(document.documentElement.scrollTop> item.offsetTop +700){
+            console.log("enter onscroll function2");
             item.classList.add("no-opacity");
         }
         /*
@@ -94,10 +95,32 @@ window.onscroll = function(){
             item.classList.remove("no-opacity");
         }
         */
-        
-
     })
-
+    //SECOND FUNCTION
+    scrollFunction()
 };
+
+//top function
+var mybutton = document.getElementById("btn_back");
+console.log(mybutton);
+// When the user scrolls down 20px from the top of the document, show the button
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    /*
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    */ 
+
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
 

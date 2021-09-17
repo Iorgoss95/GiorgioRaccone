@@ -13,6 +13,7 @@ body{
     color: white;
     display: flex;
     flex-direction: column;
+    position: relative;
     
     &.disable-text-selection{
         -ms-user-select:none;

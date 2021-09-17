@@ -91,27 +91,6 @@ button {
         left: 7rem;
         margin: auto;
 
-        &.arrow {
-          //corpo freccia
-          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-          left: 1.8rem;
-          top: .5rem;
-          width: 2.8rem;
-          height: .25rem;
-          background: none;
-          //lati freccia
-          &::before {
-            position: absolute;
-            content: '';
-            top: -0.5775rem;
-            right: 0.1rem;
-            width: 1rem;
-            height: 1rem;
-            border-top: 0.4rem solid var(--color-43);
-            border-right: 0.4rem solid var(--color-43);
-            transform: rotate(45deg);
-          }
-        }
       }
     }
     .button-container {
@@ -132,13 +111,6 @@ button {
   &:hover {
     .circle {
       width: 100%;
-      
-      .icon {
-        &.arrow {
-        background: var(--color-43);
-        transform: translate(3rem, 0);
-        }
-      }
     }
     .button-container {
       color: var(--color-43);
@@ -178,3 +150,45 @@ button {
   }
 }
 
+//button back
+.btn_back{
+  position: fixed;
+  z-index: 10;
+  bottom: 3rem;
+  right: 3rem;
+  display: flex;
+  justify-content: center;
+  transition: all .5s;
+  display: none;
+  
+  &__icon{
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  
+  &__span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--color-42);
+    color: var(--color-43);
+    border-radius: 100px;
+    padding: .7rem;
+    box-shadow:0 1rem 1.6rem .8rem #38383850;
+    }
+
+    &:hover{
+      transform: translateY(-0.65rem);
+      &::after{
+      content: "back to top";
+      color: white;
+       font-size: 2.8rem;
+       height: 2rem;
+       width: 18rem;
+       position: absolute;
+       top: -5rem;
+       left: -5rem;
+      }
+    }
+}

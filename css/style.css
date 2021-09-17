@@ -10,7 +10,8 @@ body {
   font-size: 2.5rem;
   color: white;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
   body.disable-text-selection {
     -ms-user-select: none;
     -moz-user-select: none;
@@ -38,7 +39,7 @@ color 9 scrollbar
 */
 .theme-1 {
   --color-1: #0c3139;
-  --color-2: #f5f5f5;
+  --color-2: #e4fde3;
   --color-3: #35283c;
   --color-4: #b6ff9b;
   --color-42: #1ed760;
@@ -50,7 +51,7 @@ color 9 scrollbar
   --color-6: #119941;
   --color-62:#4efa57;
   --color-8: #fec2eb;
-  --color-9: #72e5ce; }
+  --color-9: #c4fc69; }
 
 .theme-2 {
   --color-1: #3e1921;
@@ -64,11 +65,11 @@ color 9 scrollbar
   --color-6: #ffa9ab;
   --color-7: #ffd768;
   --color-8: #AE0900;
-  --color-9: #4efa57; }
+  --color-9: #f2ff3c; }
 
 .theme-3 {
   --color-1: #13223a;
-  --color-2: #d0fcff;
+  --color-2: #bcf9fd;
   --color-3: #2198b6;
   --color-3: #0170ff;
   --color-4: #589afc;
@@ -80,7 +81,7 @@ color 9 scrollbar
   --color-62: #43aae6;
   --color-7: #ffa8ab;
   --color-8: #ffffff;
-  --color-9: #11ffcf; }
+  --color-9: #11cfff; }
 
 .top-container, .middle-container, .bottom-container {
   padding: 0 5rem 5rem 5rem;
@@ -455,23 +456,6 @@ button {
         bottom: 0;
         left: 7rem;
         margin: auto; }
-        button.button-container .circle .icon.arrow {
-          transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-          left: 1.8rem;
-          top: .5rem;
-          width: 2.8rem;
-          height: .25rem;
-          background: none; }
-          button.button-container .circle .icon.arrow::before {
-            position: absolute;
-            content: '';
-            top: -0.5775rem;
-            right: 0.1rem;
-            width: 1rem;
-            height: 1rem;
-            border-top: 0.4rem solid var(--color-43);
-            border-right: 0.4rem solid var(--color-43);
-            transform: rotate(45deg); }
     button.button-container .button-container {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
       position: absolute;
@@ -487,9 +471,6 @@ button {
       font-size: 3rem; }
   button:hover .circle {
     width: 100%; }
-    button:hover .circle .icon.arrow {
-      background: var(--color-43);
-      transform: translate(3rem, 0); }
   button:hover .button-container {
     color: var(--color-43); }
 
@@ -511,6 +492,39 @@ button {
       margin: 0 2rem; }
     .btn_download__span:hover {
       background-color: var(--color-2); }
+
+.btn_back {
+  position: fixed;
+  z-index: 10;
+  bottom: 3rem;
+  right: 3rem;
+  display: flex;
+  justify-content: center;
+  transition: all .5s;
+  display: none; }
+  .btn_back__icon {
+    width: 6.5rem;
+    height: 6.5rem; }
+  .btn_back__span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-42);
+    color: var(--color-43);
+    border-radius: 100px;
+    padding: .7rem;
+    box-shadow: 0 1rem 1.6rem .8rem #38383850; }
+  .btn_back:hover {
+    transform: translateY(-0.65rem); }
+    .btn_back:hover::after {
+      content: "back to top";
+      color: white;
+      font-size: 2.8rem;
+      height: 2rem;
+      width: 18rem;
+      position: absolute;
+      top: -5rem;
+      left: -5rem; }
 
 #scrollbar-wrapper {
   position: fixed;
@@ -598,11 +612,6 @@ button {
   button .circle {
     width: 100% !important;
     border-radius: 10rem !important; }
-  button .icon.arrow {
-    opacity: 0;
-    transform: translateX(-20rem); }
-  button .icon::before {
-    opacity: 0; }
   button .button-container {
     transform: translateX(-1rem);
     color: var(--color-43) !important;
@@ -632,11 +641,6 @@ button {
   button .circle {
     width: 100% !important;
     border-radius: 10rem !important; }
-  button .icon.arrow {
-    opacity: 0;
-    transform: translateX(-20rem); }
-  button .icon::before {
-    opacity: 0; }
   button .button-container {
     transform: translateX(-1rem);
     color: var(--color-43) !important;
@@ -677,11 +681,6 @@ button {
     z-index: 5;
     top: -3.5rem !important;
     left: -11rem !important; }
-  button .icon.arrow {
-    opacity: 0;
-    transform: translateX(-20rem); }
-  button .icon::before {
-    opacity: 0; }
   button .button-container {
     background-color: var(--color-42);
     border-radius: 100px;
