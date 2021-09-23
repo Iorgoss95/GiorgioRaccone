@@ -204,6 +204,18 @@ color 9 scrollbar
   100% {
     transform: scale(1) rotate(0deg); } }
 
+@keyframes zooming-btn-up {
+  0% {
+    transform: scale(0.3); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes zooming-btn-down {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0.4); } }
+
 @keyframes moveDown {
   0% {
     opacity: 0;
@@ -287,6 +299,12 @@ color 9 scrollbar
 
 .zooming:hover {
   animation: zooming 0.2s; }
+
+.zooming-btn-up {
+  animation: zooming-btn-up 0.35s; }
+
+.zooming-btn-down {
+  animation: zooming-btn-down 0.2s; }
 
 .main-title__size {
   font-size: 8vw; }
@@ -694,4 +712,6 @@ button {
     button .button-container__text {
       font-size: 2.5rem !important;
       padding: 1px 3rem !important;
-      color: var(--color-43) !important; } }
+      color: var(--color-43) !important; }
+  .btn_back:hover::after {
+    content: ""; } }

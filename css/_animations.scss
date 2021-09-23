@@ -17,6 +17,15 @@
     100% {transform: scale(1) rotate(0deg);}
 }
 
+@keyframes zooming-btn-up {
+    0% {transform: scale(.3)}
+    100% {transform: scale(1)}
+}
+@keyframes zooming-btn-down {
+    0% {transform: scale(1)}
+    100% {transform: scale(.4)}
+}
+
 @keyframes moveDown {
     0%{
         opacity: 0;
@@ -130,4 +139,12 @@
 
 .zooming:hover{
     animation: zooming 0.2s ;
+}
+
+.zooming-btn-up{
+    animation: zooming-btn-up 0.35s ;
+}
+
+.zooming-btn-down{
+    animation: zooming-btn-down 0.2s ;
 }

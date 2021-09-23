@@ -85,20 +85,26 @@ const element = document.querySelectorAll(".opacity");
 
 window.onscroll = function(){
 
-    element.forEach(item => {
-        if(document.documentElement.scrollTop> item.offsetTop +700){
-            console.log("enter onscroll function2");
-            item.classList.add("no-opacity");
-        }
-        /*
-        else if(document.documentElement.scrollTop<=item.offsetTop-900){
-            item.classList.remove("no-opacity");
-        }
-        */
-    })
+    if(window.innerWidth < 400){
+        element.forEach(item => {
+            if(document.documentElement.scrollTop - item.offsetTop > 200 ){
+                item.classList.add("no-opacity");
+            }
+        })
+    }
+    else{
+        element.forEach(item => {
+            if(document.documentElement.scrollTop - item.offsetTop > 615 ){
+                item.classList.add("no-opacity");
+            }
+        })
+    }
+
     //SECOND FUNCTION
+    //for back to top button
     scrollFunction()
 };
+
 
 //top function
 var mybutton = document.getElementById("btn_back");
@@ -106,10 +112,12 @@ console.log(mybutton);
 // When the user scrolls down 20px from the top of the document, show the button
 
 function scrollFunction() {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    if (document.documentElement.scrollTop > 500) {
         mybutton.style.display = "block";
+        mybutton.classList.add("zooming-btn-up");
     } else {
         mybutton.style.display = "none";
+
   }
 }
 

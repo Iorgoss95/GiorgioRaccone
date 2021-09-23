@@ -263,4 +263,10 @@
             }
         }
     }
+
+    .btn_back{
+        &:hover::after{
+            content: "";
+          }
+    }
 }
