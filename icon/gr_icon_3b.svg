@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 1190.7 841.995">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="PencilOnly" value="1"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="OutlineMode" value="0"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="doHistoryDisabled" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="TimeLapseWatermarkDisabled" value="0"/>
+<vectornator:setting key="Units" value="Millimeters"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="IsolateActiveLayer" value="0"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+</metadata>
+<defs>
+<linearGradient y1="754.09" id="LinearGradient" x1="27.1118" y2="-31.2483" x2="1332.38" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)">
+<stop stop-color="#5add3c" offset="0.134454"/>
+<stop stop-color="#65c893" offset="0.888655"/>
+</linearGradient>
+<linearGradient y1="754.09" id="LinearGradient_2" x1="27.1118" y2="-31.2483" x2="1332.38" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)">
+<stop stop-color="#5add3c" offset="0.134454"/>
+<stop stop-color="#65c893" offset="0.888655"/>
+</linearGradient>
+</defs>
+<g id="Livello 2" vectornator:layerName="Livello 2">
+<g opacity="1">
+<path stroke="#515151" stroke-width="4.05645" d="M319.384+741.712C377.237+741.712+426.691+730.838+467.748+709.09C508.804+687.341+540.279+656.19+562.171+615.635C584.063+575.081+595.009+526.596+595.009+470.179L595.009+398.688L326.49+398.688L326.49+495.588L468.394+495.588L467.963+504.416C466.958+529.969+460.175+552.292+447.614+571.385C435.053+590.477+417.97+605.264+396.365+615.743C374.76+626.223+349.818+631.462+321.537+631.462C287.084+631.462+257.225+622.957+231.959+605.945C206.694+588.934+187.17+564.422+173.389+532.41C159.608+500.397+152.717+461.996+152.717+417.207L152.717+416.776C152.717+372.849+159.285+335.381+172.42+304.373C185.555+273.365+204.397+249.715+228.945+233.421C253.492+217.128+282.849+208.981+317.015+208.981C352.043+208.981+381.615+217.343+405.732+234.067C429.849+250.791+447.076+274.155+457.412+304.158L458.919+308.68L589.41+308.68L588.118+302.435C581.371+263.388+565.975+228.54+541.93+197.891C517.884+167.242+486.769+143.053+448.583+125.324C410.398+107.595+366.398+98.7309+316.585+98.7309C255.861+98.7309+203.32+111.507+158.962+137.06C114.603+162.613+80.3654+199.183+56.2482+246.772C32.131+294.36+20.0725+351.387+20.0725+417.853L20.0725+418.284C20.0725+485.754+32.1669+543.607+56.3559+591.841C80.5449+640.076+114.998+677.113+159.715+702.953C204.433+728.792+257.655+741.712+319.384+741.712Z" fill="url(#LinearGradient)" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#515151" stroke-width="4.05645" d="M681.258+730.946L811.318+730.946L811.318+505.924L909.079+505.924C910.228+505.924+911.34+505.924+912.417+505.924C913.493+505.924+914.534+505.924+915.539+505.924L1031.17+730.946L1178.67+730.946L1047.75+486.329C1082.21+472.834+1109.55+450.189+1129.79+418.391C1150.04+386.594+1160.16+350.239+1160.16+309.326L1160.16+308.464C1160.16+266.833+1151.33+231.196+1133.67+201.552C1116.01+171.908+1090.6+149.154+1057.44+133.292C1024.28+117.429+984.374+109.497+937.718+109.497L681.258+109.497L681.258+730.946ZM811.318+407.302L811.318+211.35L921.999+211.35C954.012+211.35+979.529+220.106+998.55+237.62C1017.57+255.134+1027.08+278.82+1027.08+308.68L1027.08+309.541C1027.08+339.975+1017.93+363.876+999.626+381.246C981.323+398.617+956.021+407.302+923.722+407.302L811.318+407.302Z" fill="url(#LinearGradient_2)" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
