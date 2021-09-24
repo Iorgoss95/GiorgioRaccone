@@ -710,6 +710,7 @@ button {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    left: 0rem !important;
     width: 30rem !important;
     height: 8rem !important;
     margin: auto !important; }
