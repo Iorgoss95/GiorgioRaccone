@@ -7,7 +7,7 @@
     }
         
         .normal-size{
-            font-size: 1.2vw;
+            font-size: 1.4vw;
         }
         .big-size{
             font-size: 3vw;
@@ -42,6 +42,14 @@
             font-size: 7vw;
             margin: 0 -0.5rem;
         }
+    }
+
+    .photo{
+        position: absolute;
+        top: 30rem;
+        right: 50rem;
+
+
     }
 }
 
@@ -142,6 +150,7 @@
         .section-card{
             padding: 5rem;
             &__title{
+                text-align: left;
                 font-size: 8vw;
                 padding: 0 1vw;
                 margin-top: 5rem;
@@ -192,11 +201,11 @@
     }
        
     .normal-size{
-            font-size: 4vw;
+            font-size: 5vw;
         }
 
         .line-height{
-            line-height: 3.5rem;
+            line-height: 4.5rem;
         }
 
         .contact-me{
@@ -209,11 +218,13 @@
         
         .main-title{
         &__size{
-            font-size: 10vw;
+            font-size: 12vw;
+            font-weight: 400;
             margin: 0 -0.2rem;
             
             &__big{
                 font-size: 20vw;
+                font-weight: 400;
                 margin: 0 0.1rem;
             }
         }

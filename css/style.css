@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Fredoka One', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   color: white;
   display: flex;
@@ -83,13 +84,41 @@ color 9 scrollbar
   --color-8: #ffffff;
   --color-9: #11cfff; }
 
+.theme-1 {
+  --color-1: #f8f1fc;
+  --color-2: #ffffff3b;
+  --color-3: #6868ac;
+  --color-4: #161616;
+  --color-42: #6868ac;
+  --color-43: #f8f1fc;
+  --color-5: #f8f1fc;
+  --color-6: #161616;
+  --color-62: #161616;
+  --color-7: #161616;
+  --color-8: #f8f1fc;
+  --color-9: #6868ac; }
+
+/*
+color 1 head background
+color 2 middle abckground
+color 3 footer background
+color 4 title text
+color 42 button back
+color 43 button text
+color 5 section background
+color 6 section title
+color 62 section span back
+color 7 section text
+color 8 footer text
+color 9 scrollbar
+
+*/
 .top-container, .middle-container, .bottom-container {
   padding: 0 5rem 5rem 5rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  position: relative;
-  padding: 5rem; }
+  position: relative; }
 
 .top-container {
   background-color: var(--color-1);
@@ -135,7 +164,7 @@ color 9 scrollbar
   height: .5vh; }
 
 .line-height {
-  line-height: 7rem; }
+  line-height: 4.8rem; }
 
 .align-center {
   text-align: center; }
@@ -307,7 +336,7 @@ color 9 scrollbar
   font-size: 13vw; }
 
 .contact-me__size {
-  font-size: 6rem; }
+  font-size: 7rem; }
 
 .zoom-letter {
   display: flex;
@@ -495,6 +524,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
     background-color: var(--color-8);
     color: var(--color-3);
     border-radius: 100px;
@@ -502,7 +532,7 @@ button {
     .btn_download__span p {
       margin: 0 2rem; }
     .btn_download__span:hover {
-      background-color: var(--color-2); }
+      transform: scale(1.05) translateY(-0.5rem); }
 
 .btn_back {
   position: fixed;
@@ -514,7 +544,7 @@ button {
   transition: all .5s;
   display: none; }
   .btn_back__icon {
-    width: 6.5rem;
+    width: 6.4rem;
     height: 6.5rem; }
   .btn_back__span {
     display: flex;
@@ -529,7 +559,7 @@ button {
     transform: translateY(-0.65rem); }
     .btn_back:hover::after {
       content: "back to top";
-      color: white;
+      color: var(--color-1);
       font-size: 2.8rem;
       height: 2rem;
       width: 18rem;
@@ -566,7 +596,7 @@ button {
     font-size: .4vw; }
 
   .normal-size {
-    font-size: 1.2vw; }
+    font-size: 1.4vw; }
 
   .big-size {
     font-size: 3vw; }
@@ -589,7 +619,12 @@ button {
     margin: 0 -0.8rem; }
   .main-title__size {
     font-size: 7vw;
-    margin: 0 -0.5rem; } }
+    margin: 0 -0.5rem; }
+
+  .photo {
+    position: absolute;
+    top: 30rem;
+    right: 50rem; } }
 @media only screen and (min-width: 1025px) and (max-width: 1250px) {
   * {
     font-size: .7vw; }
@@ -650,6 +685,7 @@ button {
   .section-card {
     padding: 5rem; }
     .section-card__title {
+      text-align: left;
       font-size: 8vw;
       padding: 0 1vw;
       margin-top: 5rem; }
@@ -682,10 +718,10 @@ button {
     padding: 8vw; }
 
   .normal-size {
-    font-size: 4vw; }
+    font-size: 5vw; }
 
   .line-height {
-    line-height: 3.5rem; }
+    line-height: 4.5rem; }
 
   .contact-me {
     font-size: 8.5vw; }
@@ -694,10 +730,12 @@ button {
     opacity: 0; }
 
   .main-title__size {
-    font-size: 10vw;
+    font-size: 12vw;
+    font-weight: 400;
     margin: 0 -0.2rem; }
     .main-title__size__big {
       font-size: 20vw;
+      font-weight: 400;
       margin: 0 0.1rem; }
 
   .section-card {
