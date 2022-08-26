@@ -389,6 +389,15 @@ color 9 scrollbar
     transition: width .3s; }
   .foo-card .cool-link:hover::after {
     width: 100%; }
+  .foo-card .cool-link-2:hover {
+    background-position: -100% 0;
+    color: var(--color-9); }
+  .foo-card .cool-link-2 {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--color-8) 50%);
+    background-size: 201%;
+    background-position: 0 0;
+    display: inline;
+    transition: .2s ease-in-out; }
   .foo-card .copy2021 {
     font-size: 1.8vh;
     color: var(--color-2); }
