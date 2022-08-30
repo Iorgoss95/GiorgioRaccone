@@ -361,6 +361,9 @@ color 9 scrollbar
     line-height: 8vh;
     background-color: var(--color-7);
     color: var(--color-5); }
+  .section-card__current {
+    background-color: var(--color-3);
+    border: 2px solid black; }
 
 #section-card-center {
   display: block; }

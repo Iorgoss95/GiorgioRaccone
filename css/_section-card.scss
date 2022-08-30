@@ -19,6 +19,11 @@
         background-color: var(--color-7);
         color: var(--color-5);
     }
+
+    &__current{
+        background-color: var(--color-3);
+        border: 2px solid black;
+    }
 }
 
 #section-card-center{
