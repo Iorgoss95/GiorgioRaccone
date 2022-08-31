@@ -56,20 +56,27 @@
 }
 
 //title
-.highlight-1{
+.highlight{
     background-color: var(--color-4);
     color: var(--color-1);
     padding-right: 0 2vh;
     display: inline;
+
+    &__blue{
+        background-color: var(--color-blue);
+    }
+    &__red{
+        background-color: var(--color-red);
+
+    }&__green{
+        background-color: var(--color-green);
+
+    }
+    &__yellow{
+        background-color: var(--color-yellow);
+    }
 }
 
-//section title
-.highlight-2{
-    background-color: var(--color-62);
-    color: var(--color-6);
-    padding: 0 2vh;
-    display: inline;
-}
 
 .mr-sx-5{
     margin-left: 5px;

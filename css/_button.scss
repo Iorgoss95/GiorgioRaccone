@@ -69,7 +69,7 @@ button {
       position: relative;
       top: -7.1rem;
       left: -15rem;
-      color: var(--color-43);
+      color: var(--color-white);
       width: 6.3rem;
       height: 6.3rem;
     }
@@ -80,7 +80,7 @@ button {
       margin: 0;
       width: 8rem;
       height: 8rem;
-      background: var(--color-42);
+      background: var(--color-3);
       border-radius: 10rem;
       
       .icon {
@@ -102,7 +102,7 @@ button {
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1.85rem;
-      color: var(--color-42);
+      color: var(--color-);
       line-height: 1.6;
       text-align: center;
       font-size: 3rem;
@@ -113,7 +113,7 @@ button {
       width: 100%;
     }
     .button-container {
-      color: var(--color-43);
+      color: var(--color-white);
     }
   }
 }
@@ -176,8 +176,8 @@ button {
     justify-content: center;
     align-items: center;
     
-    background-color: var(--color-42);
-    color: var(--color-43);
+    background-color: var(--color-3);
+    color: var(--color-white);
     border-radius: 100px;
     padding: .7rem;
     box-shadow:0 1rem 1.6rem .8rem #38383850;

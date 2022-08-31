@@ -23,21 +23,6 @@ body {
   body::-webkit-scrollbar {
     display: none; }
 
-/*
-color 1 head background
-color 2 middle abckground
-color 3 footer background
-color 4 title 
-color 42 button back
-color 43 button text
-color 5 section background
-color 6 section title
-color 62 section span back
-color 7 section text
-color 8 footer text
-color 9 scrollbar
-
-*/
 .theme-1 {
   --color-1: #0c3139;
   --color-2: #e4fde3;
@@ -89,27 +74,42 @@ color 9 scrollbar
   --color-2: #f0f0f0;
   --color-3: #6868ac;
   --color-4: #161616;
-  --color-42: #6868ac;
   --color-43: #ffffff;
   --color-5: #ffffff;
   --color-6: #161616;
   --color-62: #161616;
   --color-7: #161616;
   --color-8: #ffffff;
-  --color-9: #6868ac; }
+  --color-9: #5be2d1;
+  --color-tema: #6e6ec9;
+  --color-black: #161616;
+  --color-white: #ffffff;
+  --color-grey: #aaaaaa;
+  --color-green: #0f9d58;
+  --color-blue: #4285f4;
+  --color-yellow: #f4b400;
+  --color-red: #db4437; }
 
 /*
+new color? #4673b6
+
+Google color Palette
+#0f9d58
+#db4437
+#f4b400
+#4285f4
 color 1 head background
 color 2 middle abckground
 color 3 footer background
 color 4 title text
-color 42 button back
+
 color 43 button text
 color 5 section background
 color 6 section title
 color 62 section span back
 color 7 section text
 color 8 footer text
+
 color 9 scrollbar
 
 */
@@ -187,17 +187,19 @@ color 9 scrollbar
   opacity: 1;
   animation: moveUp 1s; }
 
-.highlight-1 {
+.highlight {
   background-color: var(--color-4);
   color: var(--color-1);
   padding-right: 0 2vh;
   display: inline; }
-
-.highlight-2 {
-  background-color: var(--color-62);
-  color: var(--color-6);
-  padding: 0 2vh;
-  display: inline; }
+  .highlight__blue {
+    background-color: var(--color-blue); }
+  .highlight__red {
+    background-color: var(--color-red); }
+  .highlight__green {
+    background-color: var(--color-green); }
+  .highlight__yellow {
+    background-color: var(--color-yellow); }
 
 .mr-sx-5 {
   margin-left: 5px; }
@@ -223,7 +225,7 @@ color 9 scrollbar
   0% {
     transform: scale(1, 1); }
   50% {
-    transform: scale(1.3); }
+    transform: scale(1.2); }
   100% {
     transform: scale(1, 1); } }
 @keyframes rotate {
@@ -322,7 +324,9 @@ color 9 scrollbar
   animation: rotate 0.4s; }
 
 .zooming:hover {
-  animation: zooming 0.2s; }
+  animation: zooming 0.2s;
+  color: var(--color-white);
+  background-color: black; }
 
 .zooming-btn-up {
   animation: zooming-btn-up 0.35s; }
@@ -359,11 +363,11 @@ color 9 scrollbar
   .section-card__span {
     padding: .7rem 1.5rem;
     line-height: 8vh;
-    background-color: var(--color-7);
-    color: var(--color-5); }
+    background-color: var(--color-grey);
+    color: var(--color-white); }
   .section-card__current {
-    background-color: var(--color-3);
-    border: 2px solid black; }
+    background-color: var(--color-black);
+    font-size: 2.3vw; }
 
 #section-card-center {
   display: block; }
@@ -489,7 +493,7 @@ button {
       position: relative;
       top: -7.1rem;
       left: -15rem;
-      color: var(--color-43);
+      color: var(--color-white);
       width: 6.3rem;
       height: 6.3rem; }
     button.button-container .circle {
@@ -499,7 +503,7 @@ button {
       margin: 0;
       width: 8rem;
       height: 8rem;
-      background: var(--color-42);
+      background: var(--color-3);
       border-radius: 10rem; }
       button.button-container .circle .icon {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -517,14 +521,14 @@ button {
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1.85rem;
-      color: var(--color-42);
+      color: var(--color-);
       line-height: 1.6;
       text-align: center;
       font-size: 3rem; }
   button:hover .circle {
     width: 100%; }
   button:hover .button-container {
-    color: var(--color-43); }
+    color: var(--color-white); }
 
 .btn_download {
   display: flex;
@@ -562,8 +566,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-42);
-    color: var(--color-43);
+    background-color: var(--color-3);
+    color: var(--color-white);
     border-radius: 100px;
     padding: .7rem;
     box-shadow: 0 1rem 1.6rem .8rem #38383850; }
@@ -597,7 +601,7 @@ button {
   right: 0;
   width: .8rem;
   height: 100vh;
-  transform: translateY(100vh); }
+  transform: translateY(100.5vh); }
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -767,7 +771,7 @@ button {
     top: -3.5rem !important;
     left: -11rem !important; }
   button .button-container {
-    background-color: var(--color-42);
+    background-color: var(--color-3);
     border-radius: 100px;
     color: var(--color-43) !important;
     display: flex;

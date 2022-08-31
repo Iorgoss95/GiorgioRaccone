@@ -73,7 +73,7 @@ window.addEventListener("scroll", function(){
         amountscrolled()
     }, 50)
 
-    document.querySelector(".scrollbar").setAttribute("style", "transform: translateY("+( amountscrolled() -99.5)+"vh)");
+    document.querySelector(".scrollbar").setAttribute("style", "transform: translateY("+( amountscrolled() -100.5)+"vh)");
 
 }, false)
 

@@ -6,7 +6,7 @@
 }
 @keyframes zooming {
     0% {transform: scale(1, 1)}
-    50% {transform: scale(1.3)}
+    50% {transform: scale(1.2)}
     100% {transform: scale(1, 1)}
 }
 
@@ -139,6 +139,8 @@
 
 .zooming:hover{
     animation: zooming 0.2s ;
+    color: var(--color-white);
+    background-color: black;
 }
 
 .zooming-btn-up{

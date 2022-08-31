@@ -1,22 +1,6 @@
 $color-white:#ffffff;
 $color-black:black;
 
-
-/*
-color 1 head background
-color 2 middle abckground
-color 3 footer background
-color 4 title 
-color 42 button back
-color 43 button text
-color 5 section background
-color 6 section title
-color 62 section span back
-color 7 section text
-color 8 footer text
-color 9 scrollbar
-
-*/
 //main
 .theme-1{
     --color-1: #0c3139;
@@ -85,7 +69,7 @@ color 9 scrollbar
     --color-3: #6868ac;
     
     --color-4: #161616;;
-    --color-42: #6868ac;
+
     --color-43: #ffffff;
 
     --color-5: #ffffff;
@@ -94,21 +78,37 @@ color 9 scrollbar
     --color-7: #161616;
 
     --color-8: #ffffff;
-    --color-9: #6868ac;
+    --color-9: #5be2d1;
+
+    --color-tema:#6e6ec9;
+    --color-black:#161616;
+    --color-white:#ffffff;
+    --color-grey:#aaaaaa;
+    --color-green:#0f9d58;
+    --color-blue:#4285f4;
+    --color-yellow:#f4b400;
+    --color-red:#db4437;
 }
 /*
 new color? #4673b6
+
+Google color Palette
+#0f9d58
+#db4437
+#f4b400
+#4285f4
 color 1 head background
 color 2 middle abckground
 color 3 footer background
 color 4 title text
-color 42 button back
+
 color 43 button text
 color 5 section background
 color 6 section title
 color 62 section span back
 color 7 section text
 color 8 footer text
+
 color 9 scrollbar
 
 */

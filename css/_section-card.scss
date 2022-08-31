@@ -16,13 +16,16 @@
     &__span{
         padding: .7rem 1.5rem;
         line-height: 8vh;
-        background-color: var(--color-7);
-        color: var(--color-5);
+        background-color: var(--color-grey);
+        color: var(--color-white);
+
     }
+ 
+    
 
     &__current{
-        background-color: var(--color-3);
-        border: 2px solid black;
+        background-color: var(--color-black);
+        font-size: 2.3vw;
     }
 }
 
