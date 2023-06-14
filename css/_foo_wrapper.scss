@@ -24,11 +24,6 @@
     }
 
     //cool-link-2
-    .cool-link-2:hover{
-        background-position: -100% 0;
-        color: var(--color-9);
-
-    } 
     .cool-link-2{
         background: linear-gradient(to right, rgba(255,255,255,0) 50%, var(--color-8) 50%);
         background-size: 201%;
@@ -36,6 +31,11 @@
         display: inline;
         transition: .2s ease-in-out;
     }
+    .cool-link-2:hover{
+        background-position: -100% 0;
+        color: var(--color-3);
+
+    } 
     
     .copy2021{
         font-size: 1.8vh;
